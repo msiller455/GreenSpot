@@ -7,11 +7,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<Splash/>
-
-      <Login />
+        <Splash/>
+        <Login/>
        
- master
       </div>
     );
   }
