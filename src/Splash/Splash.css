@@ -1,8 +1,11 @@
 body {
     font-family: 'Staatliches', cursive;
 }
+.splash-header {
+    font-size: 4rem; 
+}
 
 .splash-img {
     width: 90%; 
-    margin-top: 2rem; 
+    margin-top: 1rem; 
 }
