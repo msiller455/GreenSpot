@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import Login from './Login/Login'
 import './App.css';
 import Splash from './Splash/Splash'
+import Maps from './Maps/Maps';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-<Splash/>
-
+      <Splash/>
       <Login />
-       
- master
+      <Maps />
       </div>
     );
   }
