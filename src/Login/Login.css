@@ -7,7 +7,7 @@
 }
 
 .login-email {
-    border: 1px solid black; 
+    border: .1rem solid black; 
     border-radius: .3rem; 
     font-size: 1.3rem; 
     padding: 1rem; 
@@ -17,7 +17,7 @@
 }
 
 .login-password {
-    border: 1px solid black; 
+    border: .1rem solid black; 
     border-radius: .3rem; 
     font-size: 1.3rem; 
     padding: 1rem; 
@@ -28,7 +28,7 @@
 }
 
 .login-btn {
-    border: 1px solid black; 
+    border: 0rem solid black; 
     border-radius: .3rem; 
     background-color: #D0262A; 
     font-size: 1.3rem; 
