@@ -12,11 +12,13 @@ class Login extends Component {
 
     render () {
         return (
-            <form>
-                <input type="email" name="email" placeholder="Email"/>
-                <input type="password" name="password" placeholder="Password"/>
-                <button onClick={this.handleLogin}>Login</button>
-            </form>
+            <div>
+                <form className="forms">
+                    <input className="login-email" type="email" name="email" placeholder="Email"/>
+                    <input className="login-password" type="password" name="password" placeholder="Password"/><br></br>
+                    <button className="login-btn" onClick={this.handleLogin}>Login</button>
+                </form>
+            </div>
 
         )
     }
