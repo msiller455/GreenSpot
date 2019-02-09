@@ -13,10 +13,9 @@ class Login extends Component {
 
     render () {
         return (
-            <div>
+            <div className="login-container">
                 <h1 className="login-header">Log in</h1>
-                <h4 className="login-header">New to Green Spot?</h4>
-               
+                <h4 className="login-header">New to Green Spot? <Link className="signup-link" to='/login'>Sign up</Link></h4>
                 <form className="forms">
                     <input className="login-email" type="email" name="email" placeholder="Email"/>
                     <input className="login-password" type="password" name="password" placeholder="Password"/><br></br>

@@ -6,8 +6,21 @@
     margin-top: 2rem; 
 }
 
+.login-container {
+    margin-top: 7rem; 
+}
+
 .login-header {
     text-align: center; 
+}
+
+.signup-link {
+    color: #7078DB; 
+    text-decoration: none; 
+}
+
+.signup-link:visited {
+    color: #7078DB; 
 }
 
 .login-email {
