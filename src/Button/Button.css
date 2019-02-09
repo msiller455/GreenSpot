@@ -12,8 +12,10 @@
 
 .vender-login-link {
     font-size: 1.2rem; 
+    color: #7078DB; 
+    text-decoration: none; 
 }
 
 .vender-login-link:visited {
-    color: #000; 
+    color:#7078DB; 
 }

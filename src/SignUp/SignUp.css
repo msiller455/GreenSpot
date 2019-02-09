@@ -6,11 +6,11 @@
     margin-top: 2rem; 
 }
 
-.login-container {
+.signup-container {
     margin-top: 7rem; 
 }
 
-.login-header {
+.signup-header {
     text-align: center; 
 }
 
@@ -23,7 +23,7 @@
     color: #7078DB; 
 }
 
-.login-email {
+.signup-email {
     border: .1rem solid black; 
     border-radius: .3rem; 
     font-size: 1.3rem; 
@@ -33,7 +33,7 @@
     outline: none; 
 }
 
-.login-password {
+.signup-password {
     border: .1rem solid black; 
     border-radius: .3rem; 
     font-size: 1.3rem; 
@@ -44,7 +44,7 @@
     outline: none; 
 }
 
-.login-btn {
+.signup-btn {
     border: 0rem solid black; 
     border-radius: .3rem; 
     background-color: #D0262A; 

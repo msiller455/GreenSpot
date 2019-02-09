@@ -34,11 +34,6 @@ body {
     animation: 25s slider infinite; 
 }
 
-
-
-
-
-
 @keyframes slider {
     0% {
         left: 0; 
