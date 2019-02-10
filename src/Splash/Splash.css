@@ -28,7 +28,7 @@ body {
     flex-direction: row; 
     align-items: center; 
     position: relative; 
-    width: 500%; 
+    width: 100%; 
     margin:0;  
     left: 0; 
     animation: 25s slider infinite; 
@@ -64,5 +64,11 @@ body {
     }
     100% {
         left: -400%;
+    }
+    120% {
+        left: -500%;
+    }
+    125% {
+        left: -500%;
     }
 }
