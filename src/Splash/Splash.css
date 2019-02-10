@@ -9,6 +9,11 @@ body {
 }
 .splash-header {
     font-size: 4rem; 
+    display: flex; 
+}
+
+.green {
+    color: #50AD55; 
 }
 
 .splash-img {
@@ -31,7 +36,7 @@ body {
     width: 100%; 
     margin:0;  
     left: 0; 
-    animation: 25s slider infinite; 
+    animation: 35s slider infinite; 
 }
 
 @keyframes slider {
@@ -64,11 +69,5 @@ body {
     }
     100% {
         left: -400%;
-    }
-    120% {
-        left: -500%;
-    }
-    125% {
-        left: -500%;
     }
 }
