@@ -7,6 +7,8 @@ import SignUp from './SignUp/SignUp'
 import './SignUp/SignUp.css'
 import Login from './Login/Login'
 import './Login/Login.css'
+import './NavBar/NavBar.css'
+import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 
 const my404 = () => {
@@ -23,6 +25,7 @@ const App = () => {
         <Route exact path='/' component={ Splash }/>
         <Route exact path='/login' component={ Login }/>
         <Route exact path='/signup' component={ SignUp }/>
+        <Route exact path='/profile' component={ ShowPage }/>
         <Route component={ my404 }/>
       </Switch>
     </main>
