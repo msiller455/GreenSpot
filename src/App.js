@@ -7,8 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<Splash/>
-
+      <Splash/>
       <Login />
        
  master
