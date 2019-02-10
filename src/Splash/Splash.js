@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom'
 
 const Splash = () => 
     <div className="splash-container">
-        <h1 className="splash-header"><div className="green">Green</div> Spot</h1>
+        <div className="fullsize-header">
+            <h1 className="splash-header"><div className="green">Green</div> Spot</h1>
+            <div className="fullsize-header-flex">
+                <button className="splash-header-btn">Who's Out Tonight?</button>
+                <Link className="vender-header-login-link" to='/login'>Vender Login</Link>
+            </div>
+        </div>
         <div id="slider">
             <figure>
                 <img className="splash-img" src="https://s3-media2.fl.yelpcdn.com/bphoto/VC08EJZwfzU-vlhXcuS_4g/o.jpg" height="240rem"></img>
