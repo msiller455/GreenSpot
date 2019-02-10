@@ -15,7 +15,7 @@ class SingUp extends Component {
     render () {
         return (
             <div className="signup-container">
-                <h1 className="signup-header">Sign up</h1>
+                <h1 className="signup-main-header">Sign up</h1>
                 <h4 className="signup-header">Already a member?<Link className="signup-link" to='/login'> Log in</Link></h4>
                 <form className="forms">
                     <input className="signup-email" type="email" name="email" placeholder="Email"/>

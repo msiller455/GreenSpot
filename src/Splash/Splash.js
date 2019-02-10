@@ -21,7 +21,7 @@ const Splash = () =>
             </figure>
         </div>
         <Button/><br></br>
-        <Link className="vender-login-link" to='/login'>Vender Login</Link>
+        <Link className="vender-login-link" to='/login'>Log in</Link>
     </div>
 
 export default Splash 

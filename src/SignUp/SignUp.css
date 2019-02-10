@@ -10,6 +10,10 @@
     margin-top: 7rem; 
 }
 
+.signup-main-header {
+    text-align: center; 
+}
+
 .signup-header {
     text-align: center; 
 }
@@ -26,7 +30,7 @@
 .signup-email {
     border: .1rem solid black; 
     border-radius: .3rem; 
-    font-size: 1.3rem; 
+    font-size: 1rem; 
     padding: 1rem; 
     width: 50%; 
     font-family: 'Staatliches', cursive;
@@ -36,7 +40,7 @@
 .signup-password {
     border: .1rem solid black; 
     border-radius: .3rem; 
-    font-size: 1.3rem; 
+    font-size: 1rem; 
     padding: 1rem; 
     width: 50%; 
     margin-top: 1rem;
@@ -55,4 +59,181 @@
     margin-top: .5rem; 
     font-family: 'Staatliches', cursive;
     outline: none; 
+}
+
+@media screen and (min-width: 768px) {
+
+    .signup-container {
+        margin-top: 14rem; 
+    }
+
+    .signup-main-header {
+        text-align: center; 
+        font-size: 1.5rem; 
+    }
+
+    .signup-main-header {
+        text-align: center; 
+        font-size: 2.5rem; 
+    }
+    .signup-header {
+        text-align: center; 
+        font-size: 1.5rem; 
+    }
+
+    .signup-link {
+        color: #7078DB; 
+        text-decoration: none; 
+        font-size: 1.5rem; 
+    }
+
+    .signup-btn {
+        border: 0rem solid black; 
+        border-radius: .3rem; 
+        background-color: #D0262A; 
+        font-size: 1.3rem; 
+        color: #fff; 
+        padding: 1rem; 
+        width: 40%; 
+        margin-top: .5rem; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+
+    .forms {
+        margin-top: 3rem; 
+    }
+
+    .signup-password {
+        width: 40%; 
+    }
+
+    .signup-email {
+        width: 40%; 
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .signup-container {
+        margin-top: 20rem; 
+    }
+
+    .signup-main-header {
+        text-align: center; 
+        font-size: 3.5rem; 
+    }
+
+    .signup-header {
+        text-align: center; 
+        font-size: 2rem; 
+    }
+
+    .signup-link {
+        color: #7078DB; 
+        text-decoration: none; 
+        font-size: 2rem; 
+    }
+
+    .signup-btn {
+        border: 0rem solid black; 
+        border-radius: .3rem; 
+        background-color: #D0262A; 
+        font-size: 1.8rem; 
+        color: #fff; 
+        padding: 1rem; 
+        width: 38%; 
+        margin-top: .8rem; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+
+    .forms {
+        margin-top: 4rem; 
+        font-size: 2rem; 
+    }
+
+    .signup-email {
+        border: .1rem solid black; 
+        border-radius: .3rem; 
+        font-size: 2rem; 
+        padding: 1rem; 
+        width: 40%; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+    
+    .signup-password {
+        border: .1rem solid black; 
+        border-radius: .3rem; 
+        font-size: 2rem; 
+        padding: 1rem; 
+        width: 40%; 
+        margin-top: 1rem;
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+
+}
+
+@media screen and (min-width: 1359px) {
+    .signup-container {
+        margin-top: 10rem; 
+    }
+
+    .signup-main-header {
+        text-align: center; 
+        font-size: 1.8rem; 
+        margin-bottom: 3rem; 
+    }
+
+    .signup-header {
+        text-align: center; 
+        font-size: 1rem; 
+    }
+
+    .signup-link {
+        color: #7078DB; 
+        text-decoration: none; 
+        font-size: 1rem; 
+    }
+
+    .signup-btn {
+        border: 0rem solid black; 
+        border-radius: .3rem; 
+        background-color: #D0262A; 
+        font-size: 1rem; 
+        color: #fff; 
+        padding: 1rem; 
+        width: 30%; 
+        margin-top: .5rem; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+
+    .forms {
+        margin-top: 3rem; 
+        font-size: 2rem; 
+    }
+
+    .signup-email {
+        border: .1rem solid black; 
+        border-radius: .3rem; 
+        font-size: 1rem; 
+        padding: .5rem; 
+        width: 30%; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+    
+    .signup-password {
+        border: .1rem solid black; 
+        border-radius: .3rem; 
+        font-size: 1rem; 
+        padding: .5rem; 
+        width: 30%; 
+        margin-top: 1rem;
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
 }

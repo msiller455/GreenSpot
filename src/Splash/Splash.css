@@ -7,6 +7,8 @@
 body {
     font-family: 'Staatliches', cursive;
 }
+
+
 .splash-header {
     font-size: 4rem; 
     display: flex; 
@@ -87,7 +89,7 @@ body {
 @media screen and (min-width: 768px) {
     .splash-img {
         height: 30rem; 
-        width: 100%; 
+        min-width: 100%; 
         margin-top: 1rem; 
     }
 
