@@ -8,7 +8,7 @@ const Splash = () =>
             <h1 className="splash-header"><div className="green">Green</div> Spot</h1>
             <div className="fullsize-header-flex">
                 <button className="splash-header-btn">Who's Out Tonight?</button>
-                <Link className="vender-header-login-link" to='/login'>Vender Login</Link>
+                <Link className="vender-header-login-link" to='/login'>Log in</Link>
             </div>
         </div>
         <div id="slider">

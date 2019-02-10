@@ -7,7 +7,7 @@
 }
 
 .signup-container {
-    margin-top: 7rem; 
+    margin-top: 2rem; 
 }
 
 .signup-main-header {
@@ -178,7 +178,7 @@
 
 @media screen and (min-width: 1359px) {
     .signup-container {
-        margin-top: 10rem; 
+        margin-top: 5rem; 
     }
 
     .signup-main-header {
@@ -202,10 +202,10 @@
         border: 0rem solid black; 
         border-radius: .3rem; 
         background-color: #D0262A; 
-        font-size: 1rem; 
+        font-size: .9rem; 
         color: #fff; 
         padding: 1rem; 
-        width: 30%; 
+        width: 22%; 
         margin-top: .5rem; 
         font-family: 'Staatliches', cursive;
         outline: none; 
@@ -221,7 +221,7 @@
         border-radius: .3rem; 
         font-size: 1rem; 
         padding: .5rem; 
-        width: 30%; 
+        width: 22%; 
         font-family: 'Staatliches', cursive;
         outline: none; 
     }
@@ -231,7 +231,7 @@
         border-radius: .3rem; 
         font-size: 1rem; 
         padding: .5rem; 
-        width: 30%; 
+        width: 22%; 
         margin-top: 1rem;
         font-family: 'Staatliches', cursive;
         outline: none; 
