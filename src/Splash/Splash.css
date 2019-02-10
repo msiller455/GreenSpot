@@ -71,3 +71,29 @@ body {
         left: -400%;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .splash-img {
+        height: 30rem; 
+        width: 100%; 
+        margin-top: 1rem; 
+    }
+
+    .splash-header {
+        font-size: 6rem; 
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .splash-img {
+        height: 34rem; 
+        width: 110%; 
+        margin-top: 1rem; 
+    }
+
+    .splash-header {
+        font-size: 6.5rem; 
+        display: flex; 
+    }
+}
