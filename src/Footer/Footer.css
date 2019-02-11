@@ -1,0 +1,48 @@
+footer, .footer-container {
+    display: flex; 
+    justify-content: space-evenly;
+    bottom: 0; 
+    position: fixed; 
+    background-color: #F5F5F5;
+    width: 100vw; 
+}
+
+.footer-flex {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    margin-right: 2.4rem; 
+}
+
+.footer-flex li a {
+    text-decoration: none;
+    color: #1276B8; 
+    font-size: .8rem; 
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-flex li a { 
+        font-size: 1.3rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-flex li a {
+        font-size: 1.5rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-flex li a {
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (min-width: 1359px) {
+    .footer-flex li a {
+        font-size: .9rem; 
+    }
+
+}

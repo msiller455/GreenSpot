@@ -1,0 +1,138 @@
+.splash-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+
+.splash-header {
+    font-size: 4rem; 
+    display: flex; 
+}
+
+.green {
+    color: #50AD55; 
+}
+
+.splash-img {
+    width: 100%; 
+    margin-top: 1rem; 
+}
+
+#slider {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    overflow: hidden; 
+}
+
+#slider figure {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    position: relative; 
+    width: 100%; 
+    margin:0;  
+    left: 0; 
+    animation: 25s slider infinite; 
+}
+
+@keyframes slider {
+    0% {
+        left: 0; 
+    }
+    20% {
+        left: 0; 
+    }
+    25% {
+        left: -100%; 
+    }
+    45% {
+        left: -100%; 
+    }
+    50% {
+        left: -200%; 
+    }
+    70% {
+        left: -200%; 
+    }
+    75% {
+        left: -300%; 
+    }
+    85% {
+        left: -300%
+    }
+    95% {
+        left: -400%
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .splash-header {
+        font-size: 3rem; 
+        display: flex; 
+    }
+    
+    .splash-img {
+        width: 100%; 
+        margin-top: 1rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .splash-img {
+        height: 30rem; 
+        min-width: 100%; 
+        margin-top: 1rem; 
+    }
+
+    .splash-header {
+        font-size: 6rem; 
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .splash-img {
+        height: 34rem; 
+        min-width: 100%; 
+        margin-top: 1rem; 
+    }
+
+    .splash-header {
+        font-size: 7.5rem; 
+        display: flex; 
+    }
+}
+
+@media screen and (min-width: 1359px) {
+    .splash-img {
+        height: 47rem; 
+        min-width: 100%; 
+        margin-top: 1rem; 
+        
+    }
+
+    .fullsize-header {
+        display: flex; 
+        flex-direction: row; 
+    }
+
+    .splash-header {
+        font-size: 4rem; 
+        display: flex; 
+    }
+
+    .fullsize-header-flex {
+        display: flex; 
+        flex-direction: column; 
+        margin-left: 40rem; 
+    }
+}

@@ -1,20 +1,38 @@
 import React, { Component } from 'react';
-import Login from './Login/Login'
 import './App.css';
 import Splash from './Splash/Splash'
-import Maps from './Maps/Maps';
 import './Maps/Maps.css';
+import './Splash/Splash.css'
+import './Button/Button.css'
+import SignUp from './SignUp/SignUp'
+import './SignUp/SignUp.css'
+import Login from './Login/Login'
+import './Login/Login.css'
+import './NavBar/NavBar.css'
+import './Footer/Footer.css'
+import './SearchBar/SearchBar.css'
+import ShowPage from './ShowPage/ShowPage'
+import { Route, Switch } from 'react-router-dom'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-      <Splash/>
-      <Login />
-      <Maps />
-      </div>
-    );
-  }
+const my404 = () => {
+  return(
+    <div>
+      there is an error
+    </div>
+  )
+}
+const App = () => {
+  return(
+    <main>
+      <Switch>
+        <Route exact path='/' component={ Splash }/>
+        <Route exact path='/login' component={ Login }/>
+        <Route exact path='/signup' component={ SignUp }/>
+        <Route exact path='/main' component={ ShowPage }/>
+        <Route component={ my404 }/>
+      </Switch>
+    </main>
+  )
 }
 
 export default App;
