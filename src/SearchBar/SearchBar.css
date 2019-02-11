@@ -14,3 +14,10 @@
     font-size: 1rem;  
     font-family: 'Staatliches', cursive;
 }
+
+.show-container Button {
+    margin-top: 1rem; 
+    margin-left: 4.7rem; 
+    width: 59%; 
+}
+
