@@ -8,6 +8,7 @@ import './SignUp/SignUp.css'
 import Login from './Login/Login'
 import './Login/Login.css'
 import './NavBar/NavBar.css'
+import './Footer/Footer.css'
 import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 
