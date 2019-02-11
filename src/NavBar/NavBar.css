@@ -11,6 +11,7 @@
 .nav-flex {
     display: flex; 
     justify-content: space-evenly;
+    align-self: center; 
     list-style-type: none;
     margin: 0; 
     padding: 1.5rem; 
@@ -29,6 +30,94 @@
     font-size: 1rem; 
     justify-self: center;
     align-self: center;
+}
+
+@media screen and (max-width: 320px) {
+    .nav-flex li a{
+        text-decoration: none;
+        color: #50AD55; 
+        font-size: 1rem; 
+        margin-right: 1rem;
+    }
+
+    .nav-header {
+        display: none; 
+   
+    }
+
+    .nav-flex {
+        margin-left: .5rem; 
+    }
+
+}
+
+@media screen and (min-width: 414px) {
+
+    .nav-flex li a{
+        text-decoration: none;
+        color: #50AD55; 
+        font-size: 1.2rem; 
+        margin-right: 1rem;
+    }
+
+    .nav-header {
+        font-size: 1.2rem; 
+   
+    }
+
+    .nav-flex {
+        margin-left: .8rem; 
+    }
+
+    .search-input {
+        margin-left: .4rem; 
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav-container {
+        margin-left: 8rem; 
+    }
+    .nav-flex li a{
+        font-size: 1.8rem; 
+    }
+
+    .nav-header {
+        font-size: 1.8rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-container {
+        margin-left: 10rem; 
+    }
+
+    .nav-flex li a{
+        font-size: 2.5rem; 
+
+    }
+
+    .nav-header {
+        font-size: 2.5rem; 
+   
+    }
+}
+
+@media screen and (min-width: 1359px) {
+    .nav-container {
+        margin-left: 2rem; 
+    }
+
+    .nav-flex li a{
+        font-size: 1.5rem; 
+
+    }
+
+    .nav-header {
+        font-size: 1.5rem; 
+   
+    }
 }
 
 

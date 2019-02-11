@@ -17,12 +17,32 @@ footer, .footer-container {
 
 .footer-flex li a {
     text-decoration: none;
-    /* margin-left: 2rem;  */
     color: #1276B8; 
     font-size: .7rem; 
 }
 
-/* .footer-links {
-    margin-right: 3rem; 
-    
-} */
+
+@media screen and (min-width: 768px) {
+    .footer-flex li a { 
+        font-size: 1.3rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-flex li a {
+        font-size: 1.5rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-flex li a {
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (min-width: 1359px) {
+    .footer-flex li a {
+        font-size: .9rem; 
+    }
+
+}

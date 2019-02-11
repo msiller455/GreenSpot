@@ -17,15 +17,38 @@
     outline: none; 
 }
 
-.show-container Button {
-    margin-top: 5rem; 
-    margin-left: 4.7rem; 
-    height: 4rem; 
-    width: 20%; 
+
+@media screen and (max-width: 320px) {
+    .search-container {
+        margin-left: 4.1rem; 
+    }
+}
+@media screen and (min-width: 414px) {
+    .search-container {
+        margin-left: 5.5rem; 
+    }
 }
 
-.show-flex {
-    display: flex; 
-    flex-direction: row; 
+@media screen and (min-width: 768px) {
+
+    .search-container {
+        margin-left: 11rem; 
+    }
 }
 
+@media screen and (min-width: 1024px) {
+    .search-container {
+        margin-left: 14rem; 
+    }
+
+    .search-input {
+        font-size: 2rem; 
+        height: 3rem; 
+    }
+}
+
+@media screen and (min-width: 1359px) {
+.search-container {
+    display: none; 
+}
+}
