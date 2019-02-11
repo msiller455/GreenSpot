@@ -11,6 +11,8 @@ import './Login/Login.css'
 import './NavBar/NavBar.css'
 import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
+import VendorProfile from './VendorProfile/VendorProfile'
+import './VendorProfile/VendorProfile.css'
 import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 

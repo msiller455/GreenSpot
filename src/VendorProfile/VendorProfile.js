@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import NavBar from '../NavBar/NavBar';
-import Footer from '../Footer/Footer';
-import SearchBar from '../SearchBar/SearchBar';
-import Button from '../Button/Button'
-import Maps from '../Maps/Maps'
 
 
-class ShowPage extends Component {
+
+class VendorProfile extends Component {
 
 
     render () {
@@ -23,4 +19,4 @@ class ShowPage extends Component {
     }
 }
 
-export default ShowPage 
+export default VendorProfile  
