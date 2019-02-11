@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Splash from './Splash/Splash'
+import './Maps/Maps.css';
 import './Splash/Splash.css'
 import './Button/Button.css'
 import SignUp from './SignUp/SignUp'
