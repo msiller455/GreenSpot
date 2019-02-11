@@ -11,9 +11,10 @@ class NavBar extends Component {
                 <h1 className="nav-header"><div className="green">Green</div> Spot</h1>
             <ul className="nav-flex">
                 <li className="nav-links"><Link to='#'>Venders</Link></li>
-                <li className="nav-links"><Link to='#'>Who's out?</Link></li>
-                <li className="nav-links"><Link to='#'>Log out</Link></li>
-            </ul>        
+                <li className="nav-links"><Link to='#'>Reviews</Link></li>
+                <li className="nav-links"><Link to='#'>Log Out</Link></li>
+            </ul>  
+                <input className="search-header-input" type="text" placeholder="Enter your address"></input>      
         </div>
         )
     }
