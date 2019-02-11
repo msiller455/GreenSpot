@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import Geocode from "react-geocode";
+//const API_KEY = process.env.API_KEY;
+
+
 // const mapStyles = {
 //   width: '90%',
 //   height: '50%'
@@ -18,34 +21,32 @@ export class MapContainer extends Component {
     componentDidMount () {
           this.GeoAddress();
       }        
-      GeoAddress = () => {
-          // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
-          Geocode.setApiKey("AIzaSyCzdgTlTndmIPFlvVcelpUoYWykNd7Qq4o");
-          
-          // Get latidude & longitude from address.
-          let address = '15678 la subida drive, hacienda height, ca'
-          Geocode.fromAddress(address).then(
-            response => {
-              const { lat, lng } = response.results[0].geometry.location;
-              console.log(lat, 'THIS IS LAT');
-              console.log(lng, 'this is long')
-              this.setState({
-                geoAddressLat : lat,
-                geoAddressLong: lng
-            })
-            },
-            error => {
-              console.error(error);
-            }
-          )
+    GeoAddress = () => {
+        // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
+        Geocode.setApiKey('AIzaSyCzdgTlTndmIPFlvVcelpUoYWykNd7Qq4o');
+        
+        // Get latidude & longitude from address.
+        let address = 'TEMPE, ARIZONA'
+
+        Geocode.fromAddress(address).then(
+          response => {
+            const { lat, lng } = response.results[0].geometry.location;
+            this.setState({
+              geoAddressLat : lat,
+              geoAddressLong: lng
+          })
+          },
+          error => {
+            console.error(error);
           }
+        )
+      }
      
     onMarkerClick = (props, marker, e) => {
       this.setState({
           selectedPlace: props,
           activeMarker: marker,
           showingInfoWindow: true,
-          geoAddress: ''
       })
     }
     onClose = prop => {
@@ -63,20 +64,22 @@ export class MapContainer extends Component {
     <div className="map-container">
       <Map
         google={this.props.google}
-        zoom={14}
+        zoom={15}
         // style={mapStyles}
-        initialCenter={{ lat: 33.9905825, lng: -117.9736137 }}
+        initialCenter={{ lat: this.state.geoAddressLat, lng: this.state.geoAddressLong }}
       >
       <Marker
       onClick={this.onMarkerClick}
-      name={'Kenyatta International Convention Centre'}
+      name={'VEGAN PLANET'}
       />
       <Marker
           onClick = { this.onMarkerClick }
-          title = { 'ABE HOUSE' }
-          position = {{ lat: this.state.geoAddressLat, 
-                        lng: this.state.geoAddressLong }}
-          name = { 'ABE HOUSE' }  
+          title = { 'VEGAN HOOLIGANS' }
+          position = {{ lat: -9.1814, 
+                        lng: 37.8234 }}
+          name = { 'VEGAN HOOLIGANS' }
+          geoAddressLat ={'HELLO WOLRD'}
+          geoAddressLong = {'this.state.geoAddressLong'}    
        />
        <Marker
           onClick = { this.onMarkerClick }
@@ -91,6 +94,8 @@ export class MapContainer extends Component {
       >
       <div>
         <h4>{this.state.selectedPlace.name}</h4>
+        <h4>{this.state.geoAddressLat}</h4>
+        <h4>{this.state.geoAddressLong}</h4>
       </div>
     </InfoWindow>
     </Map>
