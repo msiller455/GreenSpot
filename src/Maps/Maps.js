@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import Geocode from "react-geocode";
 //const API_KEY = process.env.API_KEY;
-
-
 // const mapStyles = {
 //   width: '90%',
 //   height: '50%'
@@ -28,7 +26,6 @@ export class MapContainer extends Component {
       
       // Get latidude & longitude from address.
       let address = '90042'
-
       Geocode.fromAddress(address).then(
         response => {
           const { lat, lng } = response.results[0].geometry.location;
@@ -69,7 +66,7 @@ export class MapContainer extends Component {
         google={this.props.google}
         zoom={20}
         // style={mapStyles}
-        initialCenter={{ lat: 34.121105, lng: -118.204905}}
+        initialCenter={{ lat: 34.121105, lng: -118.204905 }}
       >
       <Marker
       onClick={this.onMarkerClick}

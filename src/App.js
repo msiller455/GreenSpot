@@ -11,6 +11,8 @@ import './Login/Login.css'
 import './NavBar/NavBar.css'
 import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
+import VendorProfile from './VendorProfile/VendorProfile'
+import './VendorProfile/VendorProfile.css'
 import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 
@@ -29,6 +31,7 @@ const App = () => {
         <Route exact path='/login' component={ Login }/>
         <Route exact path='/signup' component={ SignUp }/>
         <Route exact path='/main' component={ ShowPage }/>
+        <Route exact path='/vendor' component={ VendorProfile }/>
         <Route component={ my404 }/>
       </Switch>
     </main>

@@ -16,11 +16,12 @@ class ShowPage extends Component {
                 <div className="show-flex">
                     <SearchBar />
                 </div>
-                <Maps />
+                <Maps google={window.google} />
+
                 <footer><Footer/></footer>
             </div>
         )
     }
 }
 
-export default ShowPage
+export default ShowPage 

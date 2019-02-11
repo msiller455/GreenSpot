@@ -13,21 +13,19 @@ class SearchBar extends Component {
 
     handleSearch = (e) => {
         e.preventDefault();
-        // this.setState({
-        //     searchInput : e.target.value
-        // })
-        console.log(this.state.searchInput);
-        //scroll to map
+        this.setState({
+            searchInput : e.target.value
+        })
+        console.log(this.state);
         //search the area for vendors
-        //populate area with vendor markers.
-        //with markers have vendor show info
+        //populate area with vendor markers. //with markers have vendor show info
     }
 
 
     render () {
         return (
             <div className="search-container">
-                <input name="searchInput" className="search-input" onChange={this.handleChange} type="text" placeholder="Enter your address"></input>
+                <input className="search-input" onChange={this.handleChange} type="text" placeholder="Enter your address"></input>
                <button onClick={this.handleSearch}>Search </button>
             </div>
         )
