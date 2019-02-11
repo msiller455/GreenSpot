@@ -10,8 +10,16 @@
     outline: none; 
 }
 
+.splash-btn:hover {
+    background-color: #DA5053; 
+}
+
 .splash-header-btn {
     display: none; 
+}
+
+.splash-header-btn.hover {
+    background-color: #DA5053; 
 }
 
 .vender-header-login-link {
