@@ -12,8 +12,9 @@ class ShowPage extends Component {
         return (
             <div className="show-container">
                 <header><NavBar/></header>
-                <SearchBar/>
-                <Button/>
+                <div className="show-flex">
+                    <SearchBar/>
+                </div>
                 <footer><Footer/></footer>
             </div>
         )

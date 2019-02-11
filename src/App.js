@@ -27,7 +27,7 @@ const App = () => {
         <Route exact path='/' component={ Splash }/>
         <Route exact path='/login' component={ Login }/>
         <Route exact path='/signup' component={ SignUp }/>
-        <Route exact path='/profile' component={ ShowPage }/>
+        <Route exact path='/main' component={ ShowPage }/>
         <Route component={ my404 }/>
       </Switch>
     </main>
