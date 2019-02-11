@@ -2,7 +2,7 @@
 .nav-container {
     display: flex; 
     justify-content: space-evenly;
-    margin-left: 1rem; 
+    margin-left: 1.9rem; 
     top: 0; 
     position: fixed; 
     margin-top: .5rem; 
