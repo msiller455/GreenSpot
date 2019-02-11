@@ -26,7 +26,7 @@ export class MapContainer extends Component {
         Geocode.setApiKey('AIzaSyCzdgTlTndmIPFlvVcelpUoYWykNd7Qq4o');
         
         // Get latidude & longitude from address.
-        let address = 'TEMPE, ARIZONA'
+        let address = 'Los Aneglos'
 
         Geocode.fromAddress(address).then(
           response => {
@@ -66,7 +66,7 @@ export class MapContainer extends Component {
         google={this.props.google}
         zoom={15}
         // style={mapStyles}
-        initialCenter={{ lat: this.state.geoAddressLat, lng: this.state.geoAddressLong }}
+        initialCenter={{ lat: 34.121105, lng: -118.204905 }}
       >
       <Marker
       onClick={this.onMarkerClick}

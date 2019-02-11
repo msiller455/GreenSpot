@@ -1,0 +1,24 @@
+.vendor-show-name {
+    text-align: center; 
+    margin-top: 4rem; 
+}
+
+.vendor-show-review {
+    text-align: center;
+}
+
+.vendor-show-logo {
+    margin-top: .7rem; 
+    margin-left: 1rem; 
+    padding: .5rem; 
+}
+
+.vendor-img-bio-flex {
+    display: flex; 
+
+}
+
+.user-reviews {
+    padding: .5rem; 
+}
+
