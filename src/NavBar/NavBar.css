@@ -8,6 +8,10 @@
     margin-top: .5rem; 
 }
 
+.search-header-input {
+    display: none;
+}
+
 .nav-flex {
     display: flex; 
     justify-content: space-evenly;
@@ -49,6 +53,10 @@
         margin-left: .5rem; 
     }
 
+    .search-header-input {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 414px) {
@@ -73,6 +81,10 @@
         margin-left: .4rem; 
     }
 
+    .search-header-input {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -85,6 +97,10 @@
 
     .nav-header {
         font-size: 1.8rem; 
+    }
+
+    .search-header-input {
+        display: none;
     }
 }
 
@@ -101,6 +117,10 @@
     .nav-header {
         font-size: 2.5rem; 
    
+    }
+
+    .search-header-input {
+        display: none;
     }
 }
 
@@ -120,6 +140,7 @@
     }
 
     .search-header-input {
+        display: initial; 
         font-size: 1.2rem;  
         height: 2rem; 
         font-family: 'Staatliches', cursive;
