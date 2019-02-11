@@ -18,59 +18,62 @@ export class MapContainer extends Component {
         geoAddressLong: ''          
         }; 
 
-    componentDidMount () {
-          this.GeoAddress();
-      }        
-    GeoAddress = () => {
-        // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
-        Geocode.setApiKey('AIzaSyCzdgTlTndmIPFlvVcelpUoYWykNd7Qq4o');
+  componentDidMount () {
+        this.GeoAddress();
         
-        // Get latidude & longitude from address.
-        let address = 'TEMPE, ARIZONA'
+    }        
+  GeoAddress = () => {
+      // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
+      Geocode.setApiKey('AIzaSyCzdgTlTndmIPFlvVcelpUoYWykNd7Qq4o');
+      
+      // Get latidude & longitude from address.
+      let address = '90042'
 
-        Geocode.fromAddress(address).then(
-          response => {
-            const { lat, lng } = response.results[0].geometry.location;
-            this.setState({
-              geoAddressLat : lat,
-              geoAddressLong: lng
-          })
-          },
-          error => {
-            console.error(error);
-          }
-        )
-      }
-     
-    onMarkerClick = (props, marker, e) => {
-      this.setState({
-          selectedPlace: props,
-          activeMarker: marker,
-          showingInfoWindow: true,
-      })
-    }
-    onClose = prop => {
-        if (this.state.showingInfoWindow) {
-            this.setState({
-                showingInfoWindow: false,
-                activeMarker: null
-            })
+      Geocode.fromAddress(address).then(
+        response => {
+          const { lat, lng } = response.results[0].geometry.location;
+          this.setState({
+            geoAddressLat : lat,
+            geoAddressLong: lng
+        })
+        },
+        error => {
+          console.error(error);
         }
-    }     
+      )
+    }
+    
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+        selectedPlace: props,
+        activeMarker: marker,
+        showingInfoWindow: true,
+    })
+  }
+  onClose = prop => {
+      if (this.state.showingInfoWindow) {
+          this.setState({
+              showingInfoWindow: false,
+              activeMarker: null
+          })
+      }
+  }     
 
   render() {
     console.log(this.state.geoAddressLat);
+    console.log(this.state.geoAddressLong);
+
     return (
     <div className="map-container">
       <Map
         google={this.props.google}
-        zoom={15}
+        zoom={20}
         // style={mapStyles}
-        initialCenter={{ lat: this.state.geoAddressLat, lng: this.state.geoAddressLong }}
+        initialCenter={{ lat: 34.121105, lng: -118.204905}}
       >
       <Marker
       onClick={this.onMarkerClick}
-      name={'VEGAN PLANET'}
+      name={'YORK VEGAN VENDORS'}
       />
       <Marker
           onClick = { this.onMarkerClick }
