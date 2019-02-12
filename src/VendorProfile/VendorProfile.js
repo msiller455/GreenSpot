@@ -2,10 +2,30 @@ import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 import Carousel from 'nuka-carousel';
+import axios from 'axios';
 
 
 
 class VendorProfile extends Component {
+    state = {
+        fileSelected: null
+    }
+
+    fileSelected = (e) => {
+        this.setState({
+            fileSelected : e.target.files[0]
+        })
+        console.log(e.target.files[0])
+    }
+    fileUpload = () => {
+        const fd = new FormData();
+        fd.append('image', this.state.fileSelected, this.state.fileSelected.name)
+        axios.post('/vendors', fd)
+            .then(res => {
+                console.log(res);
+            })
+
+    }
 
 
     render () {
