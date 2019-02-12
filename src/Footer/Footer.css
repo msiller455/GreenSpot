@@ -27,6 +27,12 @@ footer, .footer-container {
     }
 }
 
+@media screen and (max-width: 414px) {
+    footer, .footer-container  {
+        width: 100%; 
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .footer-flex li a { 
@@ -34,11 +40,6 @@ footer, .footer-container {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .footer-flex li a {
-        font-size: 1.5rem; 
-    }
-}
 
 @media screen and (min-width: 1024px) {
     .footer-flex li a {

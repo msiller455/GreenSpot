@@ -89,9 +89,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .nav-container {
-        margin-left: 8rem; 
-    }
     .nav-flex li a{
         font-size: 1.8rem; 
     }
@@ -106,9 +103,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-container {
-        margin-left: 10rem; 
-    }
 
     .nav-flex li a{
         font-size: 2.5rem; 
@@ -127,7 +121,8 @@
 
 @media screen and (min-width: 1359px) {
     .nav-container {
-        margin-left: 2rem; 
+
+
     }
 
     .nav-flex li a{
