@@ -2,10 +2,11 @@
 .nav-container {
     display: flex; 
     justify-content: space-evenly;
-    margin-left: 1.9rem; 
+    border-bottom: 1px solid #000; 
     top: 0; 
     position: fixed; 
-    margin-top: .5rem; 
+    width: 100%; 
+    background-color: #fff; 
 }
 
 .search-header-input {
@@ -18,7 +19,7 @@
     align-self: center; 
     list-style-type: none;
     margin: 0; 
-    padding: 1.5rem; 
+
 
 }
 
