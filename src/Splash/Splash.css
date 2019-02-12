@@ -8,6 +8,10 @@ body {
     font-family: 'Staatliches', cursive;
 }
 
+.full-footer {
+    display:none; 
+}
+
 
 .splash-header {
     font-size: 4rem; 
@@ -39,6 +43,12 @@ body {
     margin:0;  
     left: 0; 
     animation: 25s slider infinite; 
+}
+.full-screen-cara {
+    display: none; 
+}
+.full-nav {
+    display: none; 
 }
 
 @keyframes slider {
@@ -79,10 +89,21 @@ body {
         font-size: 3rem; 
         display: flex; 
     }
+
+    .full-footer {
+        display:none; 
+    }
     
     .splash-img {
         width: 100%; 
         margin-top: 1rem; 
+    }
+
+    .full-screen-cara {
+        display: none; 
+    }
+    .full-nav {
+        display: none; 
     }
 }
 
@@ -93,9 +114,19 @@ body {
         margin-top: 1rem; 
     }
 
+    .full-footer {
+        display:none; 
+    }
+
     .splash-header {
         font-size: 6rem; 
         display: flex; 
+    }
+    .full-screen-cara {
+        display: none; 
+    }
+    .full-nav {
+        display: none; 
     }
 }
 
@@ -106,9 +137,20 @@ body {
         margin-top: 1rem; 
     }
 
+    .full-footer {
+        display:none; 
+    }
+
+    .full-nav {
+        display: none; 
+    }
+
     .splash-header {
         font-size: 7.5rem; 
         display: flex; 
+    }
+    .full-screen-cara {
+        display: none; 
     }
 }
 
@@ -116,23 +158,33 @@ body {
     .splash-img {
         height: 47rem; 
         min-width: 100%; 
-        margin-top: 1rem; 
-        
+        margin-top: 1rem;         
     }
-
+    .full-nav {
+        display: initial; 
+        width: 100%; 
+    }
+    .full-footer {
+        display:initial; 
+        width: 100%; 
+    }
+    #slider {
+        display: none; 
+    }
     .fullsize-header {
-        display: flex; 
+        display: none; 
         flex-direction: row; 
     }
-
     .splash-header {
         font-size: 4rem; 
         display: flex; 
     }
-
     .fullsize-header-flex {
         display: flex; 
         flex-direction: column; 
         margin-left: 40rem; 
+    }
+    .full-screen-cara {
+        display: initial; 
     }
 }

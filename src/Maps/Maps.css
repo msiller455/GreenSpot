@@ -8,7 +8,13 @@
         padding: 0; 
         margin: .5rem; 
         margin-left: .8rem; 
-        width: 100vw; 
+        width: 20%; 
+    }
+}
+@media screen and (min-width: 1359px) {
+    .map-container {
+        padding: 0; 
+        margin-top: 5rem; 
     }
 }
 
