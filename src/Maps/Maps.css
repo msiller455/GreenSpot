@@ -11,7 +11,7 @@
         width: 20%; 
     }
 }
-@media screen and (max-width: 1359px) {
+@media screen and (min-width: 1359px) {
     .map-container {
         padding: 0; 
         margin-top: 5rem; 
