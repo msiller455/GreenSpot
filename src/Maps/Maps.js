@@ -18,7 +18,6 @@ export class MapContainer extends Component {
 
   componentDidMount () {
         this.GeoAddress();
-        
     }        
   GeoAddress = () => {
       // set Google Maps Geocoding API for purposes of quota management. Its optional but recommended.
@@ -68,6 +67,7 @@ export class MapContainer extends Component {
         // style={mapStyles}
         initialCenter={{ lat: 34.121105, lng: -118.204905 }}
       >
+
       <Marker
       onClick={this.onMarkerClick}
       name={'YORK VEGAN VENDORS'}

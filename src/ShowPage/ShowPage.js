@@ -14,7 +14,7 @@ class ShowPage extends Component {
             <div className="show-container">
                 <header><NavBar/></header>
                 <div className="show-flex">
-                    <SearchBar />
+                    <SearchBar google={window.google} />
                 </div>
                 <Maps google={window.google} />
 
