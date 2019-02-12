@@ -22,3 +22,61 @@
     padding: .5rem; 
 }
 
+@media screen and (max-width: 320px) {
+    .vendor-show-name {
+        margin-top: 1rem; 
+    }
+
+    .vendor-show-logo {
+        margin-top:0rem; 
+    }
+    .vendor-bio {
+        margin-top:.2rem; 
+    }
+    .cara-img {
+        height: 12.3rem; 
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .cara-img {
+        height: 16rem; 
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .cara-img {
+        height: 15rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cara-img {
+        height: 30rem; 
+        margin-bottom: 4rem; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .vendor-show-name {
+        margin-top: 10rem; 
+        font-size: 4rem; 
+    }
+
+    .vendor-bio {
+        font-size: 2rem; 
+    }
+    .cara-img {
+        height: 42rem; 
+        margin-bottom: 6rem; 
+    }
+
+    .vendor-show-review {
+        font-size: 3rem; 
+    }
+
+    .user-reviews {
+        font-size: 2rem; 
+    }
+}
