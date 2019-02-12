@@ -19,8 +19,9 @@ import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 import io from 'socket.io-client'
 import OAuth from './OAuth'
-const socket = io('http://localhost:3030')
 import Maps from './Maps/Maps'
+
+const socket = io('http://localhost:3030')
 
 const my404 = () => {
   return(
