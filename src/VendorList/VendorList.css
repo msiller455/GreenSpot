@@ -135,7 +135,8 @@
     }
     .vendor-list-head {
         display: initial; 
-        font-size: 1.3rem; 
+        font-size: 1.2rem; 
         text-align: center; 
+        margin-left: 2.2rem; 
     }
 }
