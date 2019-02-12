@@ -120,21 +120,14 @@
 }
 
 @media screen and (min-width: 1359px) {
-    .nav-container {
-
-
-    }
-
     .nav-flex li a{
         font-size: 1.5rem; 
 
     }
-
     .nav-header {
         font-size: 1.5rem; 
    
     }
-
     .search-header-input {
         display: initial; 
         font-size: 1.2rem;  
