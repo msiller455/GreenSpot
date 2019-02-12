@@ -19,8 +19,8 @@ import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 import io from 'socket.io-client'
 import OAuth from './OAuth'
-
 const socket = io('http://localhost:3030')
+import Maps from './Maps/Maps'
 
 const my404 = () => {
   return(
@@ -40,6 +40,8 @@ const App = () => {
         <Route exact path='/main' component={ ShowPage }/>
         <Route exact path='/vendor' component={ VendorProfile }/>
         <Route exact path='/vendorlist' component={ VendorList }/>
+        <Route exact path='/maps' component={ Maps }/>
+
         <Route component={ my404 }/>
       </Switch>
       <OAuth

@@ -1,22 +1,9 @@
-.map-container {   
-    width: 20%;
-}
-
-
-@media screen and (max-width: 320px) {
-    .map-container {
-        padding: 0; 
-        margin: .5rem; 
-        margin-left: .8rem; 
-        width: 20%; 
-    }
-}
-@media screen and (min-width: 1359px) {
-    .map-container {
-        padding: 0; 
-        margin-top: 5rem; 
-    }
-}
-
-
-
+#map {
+    height: 100vh;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
