@@ -22,7 +22,8 @@
 
 @media screen and (max-width: 320px) {
     .search-container {
-        margin-left: 3.8rem; 
+        width: 91%; 
+        font-size: 1rem; 
     }
 }
 @media screen and (min-width: 414px) {
