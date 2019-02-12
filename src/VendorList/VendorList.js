@@ -18,7 +18,7 @@ class VendorList extends Component {
                     <h1 className="vendor-list-header">Vegatinos</h1>
                     <img className="vendor-list-img" src="https://karmicvintage.files.wordpress.com/2018/02/vegatinos-1.jpg" height="240rem"></img><br></br><br></br>
                     <h1 className="vendor-list-header">Jackfruit Cafe</h1>
-                    <img className="vendor-list-img" src="https://images.happycow.net/venues/1024/10/02/hcmp100259_300958.jpeg" height="240rem"></img><br></br><br></br>
+                    <img className="vendor-list-img" src="https://usateatsiptrip.files.wordpress.com/2018/05/30899974_1944977615573365_7140452609285947392_n.jpg" height="240rem"></img><br></br><br></br>
                 <Footer/>
             </div>
         )

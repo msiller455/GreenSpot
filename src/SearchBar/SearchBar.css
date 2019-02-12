@@ -1,18 +1,19 @@
 .search-container {
-    margin-top: 21%;
-    margin-left: 4.8rem; 
-    margin-bottom: .5rem;  
+    margin-top: 3rem;
+    margin-bottom: .5rem; 
+    margin-left: .5rem;  
     border: .1rem solid black; 
     border-radius: .3rem; 
     font-size: 1rem; 
     padding: .8rem; 
-    width: 50%; 
+    width: 88%; 
     font-family: 'Staatliches', cursive;
     outline: none; 
 }
 
 .search-input {
     font-size: 1.2rem;  
+    width: 20rem; 
     height: 1rem; 
     font-family: 'Staatliches', cursive;
     outline: none; 
