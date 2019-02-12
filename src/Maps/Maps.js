@@ -60,7 +60,6 @@ content: contentString
     render () {
       return (    
         <div>
-        <h1>Map</h1>
         <div id="map"></div>
         </div>
       )
