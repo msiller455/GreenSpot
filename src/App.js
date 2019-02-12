@@ -17,6 +17,10 @@ import VendorProfile from './VendorProfile/VendorProfile'
 import './VendorProfile/VendorProfile.css'
 import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
+import io from 'socket.io-client'
+import OAuth from './OAuth'
+
+const socket = io('http://localhost:3030')
 
 const my404 = () => {
   return(
@@ -26,6 +30,7 @@ const my404 = () => {
   )
 }
 const App = () => {
+  console.log(socket)
   return(
     <main>
       <Switch>
@@ -37,6 +42,9 @@ const App = () => {
         <Route exact path='/vendorlist' component={ VendorList }/>
         <Route component={ my404 }/>
       </Switch>
+      <OAuth
+       socket={ socket }
+      />
     </main>
   )
 }
