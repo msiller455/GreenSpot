@@ -19,8 +19,6 @@
     align-self: center; 
     list-style-type: none;
     margin: 0; 
-
-
 }
 
 .nav-flex li a{
@@ -51,7 +49,7 @@
     }
 
     .nav-flex {
-        margin-left: .5rem; 
+      margin-right: 1.5rem; 
     }
 
     .search-header-input {
@@ -89,9 +87,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .nav-container {
-        margin-left: 8rem; 
-    }
     .nav-flex li a{
         font-size: 1.8rem; 
     }
@@ -106,9 +101,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .nav-container {
-        margin-left: 10rem; 
-    }
 
     .nav-flex li a{
         font-size: 2.5rem; 
@@ -126,20 +118,14 @@
 }
 
 @media screen and (min-width: 1359px) {
-    .nav-container {
-        margin-left: 2rem; 
-    }
-
     .nav-flex li a{
         font-size: 1.5rem; 
 
     }
-
     .nav-header {
         font-size: 1.5rem; 
    
     }
-
     .search-header-input {
         display: initial; 
         font-size: 1.2rem;  

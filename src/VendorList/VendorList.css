@@ -1,7 +1,142 @@
 .vendor-list-header {
     text-align: center; 
+    margin-top: 3rem; 
 }
 
 .vendor-list-img {
-    min-width: 100%; 
+    width: 100%; 
+}
+
+.vendor-list-imgur {
+    display: none;
+}
+
+.vendor-list-head {
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .vendor-list-img {
+        width: 100%; 
+    }
+    .vendor-list-imgur {
+        display: none;
+    }
+    
+    .vendor-list-head {
+        display: none;
+    }
+    .vendor-list-flex {
+        display: none; 
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .vendor-list-flex {
+        display: none; 
+    }
+    .vendor-list-head {
+        display: none;
+    }
+    .vendor-list-imgur {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 414px) {
+    .vendor-list-header {
+        margin-top: 3rem; 
+    }
+    .vendor-list-img {
+        height: 18rem; 
+        width: 100%; 
+
+    }
+    .vendor-list-imgur {
+        display: none;
+    }
+    
+    .vendor-list-head {
+        display: none;
+    }
+
+    .vendor-list-flex {
+        display: none; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .vendor-list-header {
+        margin-top: 4rem; 
+        font-size: 2.5rem; 
+    }
+    .vendor-list-img { 
+        height: 30rem; 
+    }
+    .vendor-list-imgur {
+        display: none;
+    }
+    
+    .vendor-list-head {
+        display: none;
+    }
+    .vendor-list-flex {
+        display: none; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .vendor-list-header {
+        margin-top: 6rem; 
+        font-size: 3.3rem; 
+    }
+    .vendor-list-img { 
+        height: 42rem; 
+    }
+    .vendor-list-imgur {
+        display: none;
+    }
+    
+    .vendor-list-head {
+        display: none;
+    }
+    .vendor-list-flex {
+        display: none; 
+    }  
+}
+
+@media screen and (min-width: 1359px) {
+    .vendor-list-img { 
+        display: none; 
+    }
+
+    .vendor-list-header {
+        display: none; 
+    }
+
+    .vendor-list-flex {
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        margin-left: 1rem; 
+    }
+
+    .vendor-column {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .vendor-list-imgur {
+        display: initial; 
+        margin-left: 2.2rem; 
+        height: 13rem; 
+        width: 18rem; 
+    }
+    .vendor-list-head {
+        display: initial; 
+        font-size: 1.2rem; 
+        text-align: center; 
+        margin-left: 2.2rem; 
+    }
 }

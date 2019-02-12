@@ -40,9 +40,9 @@ class VendorProfile extends Component {
                     </h3>
                 </div>
                     <Carousel>
-                        <img src="http://7gigzxopz0uiqxo1-zippykid.netdna-ssl.com/wp-content/uploads/2018/05/vegan-hooligans.jpg" />
-                        <img src="https://images.happycow.net/venues/1024/11/54/hcmp115492_375128.jpeg" />
-                        <img src="https://static.wixstatic.com/media/afa30d_a284a182491549e0af7dd6b678cd6066~mv2_d_2400_1602_s_2.jpg" />
+                        <img className="cara-img" src="http://7gigzxopz0uiqxo1-zippykid.netdna-ssl.com/wp-content/uploads/2018/05/vegan-hooligans.jpg" />
+                        <img className="cara-img" src="https://images.happycow.net/venues/1024/11/54/hcmp115492_375128.jpeg" />
+                        <img className="cara-img" src="https://static.wixstatic.com/media/afa30d_a284a182491549e0af7dd6b678cd6066~mv2_d_2400_1602_s_2.jpg" />
                     </Carousel>
                     <h1 className="vendor-show-review">Reviews</h1>
                     <h3 className="user-reviews">Brent: This place is bomb!!! My favorite spot in the York Zone. Highly recommand.
