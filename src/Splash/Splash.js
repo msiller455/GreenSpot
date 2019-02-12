@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import Carousel from 'nuka-carousel'
 import Footer from '../Footer/Footer'
 import NavBar from '../NavBar/NavBar'
+import OAuth from '../OAuth/OAuth'
 
-const Splash = () => 
+const Splash = (props) => 
     <div className="splash-container">
         <div className="fullsize-header">
             <h1 className="splash-header"><div className="green">Green</div> Spot</h1>
@@ -34,7 +35,17 @@ const Splash = () =>
             </Carousel>
         </div>
         <Button/><br></br>
-        <Link className="vender-login-link" to='/login'>Log in</Link>
+        {!props.loggedIn ?
+            <OAuth 
+                socket={props.socket} 
+                setUser={props.setUser} 
+                closeCard={props.closeCard}
+                checkPopup={props.checkPopup}
+                openPopup={props.openPopup}
+                startAuth={props.startAuth}
+                closeCard={props.closeCard}
+                /> : <button onClick={props.closeCard}>logout </button>
+        }
         <div className="full-footer">
             <Footer/>
         </div>
