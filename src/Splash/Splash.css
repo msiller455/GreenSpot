@@ -158,34 +158,27 @@ body {
     .splash-img {
         height: 47rem; 
         min-width: 100%; 
-        margin-top: 1rem; 
-        
+        margin-top: 1rem;         
     }
-
     .full-nav {
         display: initial; 
         width: 100%; 
     }
-
     .full-footer {
         display:initial; 
         width: 100%; 
     }
-
     #slider {
         display: none; 
     }
-
     .fullsize-header {
         display: none; 
         flex-direction: row; 
     }
-
     .splash-header {
         font-size: 4rem; 
         display: flex; 
     }
-
     .fullsize-header-flex {
         display: flex; 
         flex-direction: column; 
@@ -193,6 +186,5 @@ body {
     }
     .full-screen-cara {
         display: initial; 
-
     }
 }
