@@ -44,11 +44,26 @@ body {
     left: 0; 
     animation: 25s slider infinite; 
 }
-.full-screen-cara {
+.full-screen-image {
     display: none; 
 }
 .full-nav {
     display: none; 
+}
+.full-screen-para {
+    display: none; 
+}
+.nav-main-header {
+    display:none;
+}
+.full-screen-design {
+    display: none; 
+}
+.splash-statement {
+    display: none; 
+}
+.splash-full-btn {
+    display: none;
 }
 
 @keyframes slider {
@@ -89,21 +104,33 @@ body {
         font-size: 3rem; 
         display: flex; 
     }
-
+    .nav-main-header {
+        display:none;
+    }
     .full-footer {
         display:none; 
-    }
-    
+    }   
     .splash-img {
         width: 100%; 
         margin-top: 1rem; 
     }
-
-    .full-screen-cara {
+    .full-screen-image {
         display: none; 
     }
     .full-nav {
         display: none; 
+    }
+    .full-screen-para {
+        display: none; 
+    }
+    .full-screen-design {
+        display: none; 
+    }
+    .splash-statement {
+        display: none; 
+    }
+    .splash-full-btn {
+        display: none;
     }
 }
 
@@ -113,20 +140,33 @@ body {
         min-width: 100%; 
         margin-top: 1rem; 
     }
-
+    .nav-main-header {
+        display:none;
+    }
     .full-footer {
         display:none; 
     }
-
     .splash-header {
         font-size: 6rem; 
         display: flex; 
     }
-    .full-screen-cara {
+    .full-screen-image {
         display: none; 
     }
     .full-nav {
         display: none; 
+    }
+    .full-screen-para {
+        display: none; 
+    }
+    .full-screen-design {
+        display: none; 
+    }
+    .splash-statement {
+        display: none; 
+    }
+    .splash-full-btn {
+        display: none;
     }
 }
 
@@ -136,7 +176,9 @@ body {
         min-width: 100%; 
         margin-top: 1rem; 
     }
-
+    .nav-main-header {
+        display:none;
+    }
     .full-footer {
         display:none; 
     }
@@ -144,13 +186,24 @@ body {
     .full-nav {
         display: none; 
     }
-
     .splash-header {
         font-size: 7.5rem; 
         display: flex; 
     }
-    .full-screen-cara {
+    .full-screen-image {
         display: none; 
+    }
+    .full-screen-para {
+        display: none; 
+    }
+    .full-screen-design {
+        display: none; 
+    }
+    .splash-statement {
+        display: none; 
+    }
+    .splash-full-btn {
+        display: none;
     }
 }
 
@@ -182,9 +235,70 @@ body {
     .fullsize-header-flex {
         display: flex; 
         flex-direction: column; 
-        margin-left: 40rem; 
+        margin-left: 35rem; 
     }
-    .full-screen-cara {
+    .full-screen-image{
         display: initial; 
+        margin-top: 0rem;
+        margin-left: 4rem;  
+    }
+    .body-flex {
+        display: flex; 
+        padding: 1rem; 
+        margin-left: 0rem; 
+        width: 100%; 
+        border-top: 0px solid #000; 
+        background-color: #50AD55; 
+        border-bottom: 0px solid #000; 
+    }
+    .full-screen-para{
+        display: initial; 
+        margin-top: 0rem; 
+        margin-left: 5rem; 
+        width: 30rem; 
+        padding: 1rem; 
+    }
+    .google-fullscreen-login-btn {
+        display: none; 
+    }
+    .nav-main-header {
+        display:initial;
+        display: flex; 
+        margin-top: 6rem; 
+        font-size: 5rem; 
+        text-align: center; 
+    }
+    .full-screen-section {
+        display: flex; 
+    }
+
+    .full-screen-design {
+        display: initial; 
+        text-align: center; 
+        border-top: 0px solid black; 
+        border-top: 0px solid black;
+        width: 100%; 
+        border-radius: .3rem; 
+        margin-top: 4rem; 
+        background-color: #50AD55; 
+        background-size: cover; 
+    }
+    .splash-statement {
+        display: initial; 
+    }
+    .splash-full-btn {
+        display: initial; 
+        border: 0rem solid #000; 
+        border-radius: .3rem;  
+        font-size: 1.2rem; 
+        padding: 1.3rem; 
+        margin: 3rem 0rem; 
+        background-color: #D0262A; 
+        color: #fff; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+    .margin-body {
+        margin-left: 11rem; 
     }
 }

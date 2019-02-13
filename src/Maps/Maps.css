@@ -7,3 +7,13 @@
     margin: 0;
     padding: 0;
   }
+
+  #map {
+    width: 100vw; 
+  }
+
+  @media screen and (min-width: 1359px) {
+    #map {
+      margin-top: 5rem; 
+    }
+  }

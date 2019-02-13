@@ -9,7 +9,7 @@ class OAuth extends Component {
 
     render() {
         return(
-            <div>
+            <div className="google-fullscreen-login-btn">
                 <div className={'button-wrapper fadein-fast'}>
                     <button
                         onClick={(e) => this.props.startAuth(e)}
