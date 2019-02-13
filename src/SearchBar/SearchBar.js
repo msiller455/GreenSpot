@@ -5,10 +5,6 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 class SearchBar extends Component {
 
-//  const mapStyles = {
-//   width: '90%',
-//   height: '50%'
-// };
     state = {
         searchInput: '',
         geoAddressLat: '',
@@ -22,10 +18,7 @@ class SearchBar extends Component {
         })
     }
     handleSearch = (e) => {
-        e.preventDefault();
-        this.setState({
-            searchInput : e.target.value
-        })
+        e.preventDefault()
         this.getGeoaddress();     
     }
     getGeoaddress = async () => {
@@ -37,7 +30,7 @@ class SearchBar extends Component {
         const geoAddressParsedJson = await geoAddress.json();
         let geoAddressLat = geoAddressParsedJson.results[0].geometry.location.lat;
         let geoAddressLng = geoAddressParsedJson.results[0].geometry.location.lng;
-        this.setState({
+        this.props.doUpdateLocation({
           geoAddressLat: geoAddressLat,
           geoAddressLng: geoAddressLng
 

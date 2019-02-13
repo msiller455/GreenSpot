@@ -7,16 +7,23 @@ import Maps, { MapContainer } from '../Maps/Maps'
 
 
 class ShowPage extends Component {
+    state = {
+        location: {}
+    }
 
+    doUpdateLocation = (localObj) => 
+        this.setState({location: localObj})
 
+    
     render () {
+        console.log('render this')
         return (
             <div className="show-container">
                 <header><NavBar/></header>
                 <div className="show-flex">
-                <SearchBar />
+                <SearchBar doUpdateLocation={this.doUpdateLocation}/>
                 </div>
-                <Maps />
+                <Maps location={this.state.location}/>
 
                 <footer><Footer/></footer>
             </div>

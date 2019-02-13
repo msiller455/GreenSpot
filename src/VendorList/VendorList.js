@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 
 
 class VendorList extends Component {
-
+    state = []
 
     render () {
         return (
