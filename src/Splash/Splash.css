@@ -194,11 +194,12 @@ body {
     .fullsize-header-flex {
         display: flex; 
         flex-direction: column; 
-        margin-left: 40rem; 
+        margin-left: 35rem; 
     }
     .full-screen-image{
         display: initial; 
-        margin-top: 8rem; 
+        margin-top: 8rem;
+        margin-left: 1rem;  
     }
 
     .body-flex {
@@ -210,5 +211,9 @@ body {
         margin-top: 8rem; 
         margin-left: 2rem; 
         width: 30rem; 
+    }
+
+    .google-fullscreen-login-btn {
+        display: none; 
     }
 }
