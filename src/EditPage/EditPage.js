@@ -22,15 +22,15 @@ class EditPage extends Component {
         console.log(this.props)
         return (
             <div>
-                <h1>Vendor Edit Page</h1>
+                <h1 className="vendor-edit-header">Vendor Edit Page</h1>
                 <form className="forms" onSubmit={(e) => this.vendorUpdate(e)}>
-                    Vendor Name: <input onChange={(e) => this.handleInput(e)} type="text" name="vendorName"/><br/>
-                    Tonight's address: <input onChange={(e) => this.handleInput(e)} type="text" name="location"/><br/>
-                    Out tonight: <input onChange={(e) => this.handleInput(e)} type="checkbox" name="outTonight"/><br/>
-                    Website: <input onChange={(e) => this.handleInput(e)} type="text" name="website"/><br/>
-                    Food Pic (At least 1 preferably): <input onChange={(e) => this.handleInput(e)} type="text" name="image"/><br/>
+                    Vendor Name: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="vendorName"/><br/>
+                    Tonight's address: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="location"/><br/>
+                    Out tonight: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="checkbox" name="outTonight"/><br/>
+                    Website: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="website"/><br/>
+                    Food Pic, At least 1 preferably: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="image"/><br/>
                     <br/>
-                    <input type="Submit"/>
+                    <input className="vendor-edit-submit" type="Submit"/>
                 </form>
             </div>
         )
