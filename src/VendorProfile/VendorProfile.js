@@ -31,18 +31,28 @@ class VendorProfile extends Component {
     fileUpload = () => {
         const fd = new FormData();
         fd.append('image', this.state.fileSelected, this.state.fileSelected.name)
-        axios.post('/vendors', fd)
+        axios.post('/users', fd)
             .then(res => {
                 console.log(res);
             })
 
     }
     routeChange = () => {
-     this.props.history.push(`/vendor/${this.props.match.params.id}/edit`);
+     this.props.history.push(`/users/${this.props.match.params.id}/edit`);
     }
 
  vendorUpdate = async (e) => {
-     //edit
+     e.preventDefault()
+     axios.put('/users/${this.props.match.params.id}', this.state)
+    //  try {
+    //     const response = await axios(`/users/${this.props.match.params.id}`, {
+    //         method: 'PUT',
+    //         credentials: 'include',
+    //         body: JSON.stringify(this.state.)
+    //     })
+    //  } catch (err) {
+    //      console.log(err)
+    //  }
     }
 
 

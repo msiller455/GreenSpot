@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Maps.css'
-import { load_google_maps, load_places } from '../utils'
 //const API_KEY = process.env.API_KEY;
 // const mapStyles = {
 //   width: '90%',

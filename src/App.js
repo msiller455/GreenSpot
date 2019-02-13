@@ -53,8 +53,8 @@ class App extends Component  {
           this.popup.close()
           this.setState({user, loggedIn: true})
           user.created
-            ? this.props.history.push(`/vendor/${user.id}/edit`)
-            : this.props.history.push(`/vendor/${user.id}`)
+            ? this.props.history.push(`/users/${user.id}/edit`)
+            : this.props.history.push(`/users/${user.id}`)
       })
   }
 
@@ -108,9 +108,9 @@ class App extends Component  {
           <Route exact path='/login' component={ Login }/>
           <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
-          <Route exact path='/vendor/:id' component={ VendorProfile }/>
-          <Route exact path='/vendor/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
-          <Route exact path='/vendorlist' component={ VendorList }/>
+          <Route exact path='/users/:id' component={ VendorProfile }/>
+          <Route exact path='/users/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
+          <Route exact path='/users' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route component={ my404 }/>
         </Switch>
