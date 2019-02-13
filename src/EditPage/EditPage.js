@@ -6,13 +6,12 @@ const EditPage = (props) => {
             <div>
                 <h1>Vendor Edit Page</h1>
                 <form className="forms" onSubmit={props.vendorUpdate}>
-                    <input type="text" name="vendorName" placeholder="Vendor name"/>
-                    <label>WHERE ARE YOU TONIGHT? <br/>
-                        <input type="address" name="location" placeholder="Location"/>
-                    </label><br/>
-                    <input type="text" name="image" placeholder="image"/><br></br>
-                    <input type="number" name="phone" placeholder="Phone #"/><br></br>
-                    <input type="text" name="website" placeholder="Website"/><br></br>
+                    Vendor Name: <input type="text" name="vendorName"/><br/>
+                    Tonight's location: <input type="text" name="location"/><br/>
+                    Phone Number: <input type="text" name="phone"/><br/>
+                    Website: <input type="text" name="website"/><br/>
+                    Profile Picture: <input type="text" name="profilePic"/><br/>
+                    Food images (At least 1 preferably): <input type="text" name="image"/><br/>
                     <br/>
                     <input type="Submit"/>
                 </form>
