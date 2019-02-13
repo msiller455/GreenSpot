@@ -83,7 +83,7 @@ class App extends Component  {
             e.preventDefault()
             this.popup = this.openPopup() 
             this.checkPopup()
-            this.props.history.push("/vendor")
+            this.props.history.push("/vendor/:id")
         }
     }
 
