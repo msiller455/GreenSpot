@@ -44,7 +44,7 @@ const Splash = (props) =>
                 openPopup={props.openPopup}
                 startAuth={props.startAuth}
                 closeCard={props.closeCard}
-                /> : <button onClick={props.closeCard}>logout </button>
+                /> : <button className="logout-btn" onClick={props.closeCard}>logout </button>
         }
         <div className="full-footer">
             <Footer/>

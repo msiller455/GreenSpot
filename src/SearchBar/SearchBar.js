@@ -54,12 +54,11 @@ class SearchBar extends Component {
     } 
     render () {
         return (
-            <div>
+            
             <div className="search-container">
                 <input name="searchInput"className="search-input" onChange={this.handleChange} type="text" placeholder="Enter your address"></input>
-            </div>
-                <button onClick={this.handleSearch}>Search </button>  
-            </div>         
+                <button className="search-btn" onClick={this.handleSearch}>Search </button> 
+            </div>        
         )
     }
 }
