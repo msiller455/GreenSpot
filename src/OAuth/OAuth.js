@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome'
+import { withRouter } from 'react-router-dom'
 
 
 
@@ -22,4 +23,4 @@ class OAuth extends Component {
     }
 }
 
-export default OAuth
+export default withRouter(OAuth)
