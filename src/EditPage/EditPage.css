@@ -4,6 +4,8 @@
     height: 2rem; 
     width: 13rem; 
     margin: .5rem; 
+    font-size: 1rem; 
+    outline: none; 
 }
 
 .vendor-edit-header {
@@ -12,7 +14,6 @@
 
 .vendor-edit-submit{
     margin-left:1rem;
-    font-size: 1rem;  
     width: 8rem;
     height: 3rem;  
     border: 0rem solid #000; 
