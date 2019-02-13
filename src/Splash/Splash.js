@@ -26,7 +26,8 @@ const Splash = (props) =>
         <div className="full-nav">
             <NavBar startAuth={props.startAuth}/>
         </div>
-        <h1 className="nav-main-header"><div className="green">Green</div> Spot</h1>        
+        <h1 className="nav-main-header"><div className="green">Green</div> Spot</h1>    
+        <h2 className="splash-statement">Shining a spotlight on the vegan street food scene</h2>    
         <div className="body-flex">
             <img className="full-screen-image" src="https://s3-media2.fl.yelpcdn.com/bphoto/VC08EJZwfzU-vlhXcuS_4g/o.jpg" height="240rem" />    
             <img className="full-screen-image" src="https://livekindlyproduction-8u6efaq1lwo6x9a.stackpathdns.com/wp-content/uploads/2018/06/Vegan-Seafood-Company-to-Launch-Shrimp-Made-From-Algae-in-Restaurants-Across-U.S..jpg" height="240rem" width="400rem" />
