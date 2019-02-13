@@ -53,6 +53,12 @@ body {
 .full-screen-para {
     display: none; 
 }
+.nav-main-header {
+    display:none;
+}
+.full-screen-design {
+    display: none; 
+}
 
 @keyframes slider {
     0% {
@@ -92,6 +98,9 @@ body {
         font-size: 3rem; 
         display: flex; 
     }
+    .nav-main-header {
+        display:none;
+    }
 
     .full-footer {
         display:none; 
@@ -111,6 +120,9 @@ body {
     .full-screen-para {
         display: none; 
     }
+    .full-screen-design {
+        display: none; 
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -118,6 +130,9 @@ body {
         height: 30rem; 
         min-width: 100%; 
         margin-top: 1rem; 
+    }
+    .nav-main-header {
+        display:none;
     }
 
     .full-footer {
@@ -137,6 +152,9 @@ body {
     .full-screen-para {
         display: none; 
     }
+    .full-screen-design {
+        display: none; 
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -144,6 +162,9 @@ body {
         height: 34rem; 
         min-width: 100%; 
         margin-top: 1rem; 
+    }
+    .nav-main-header {
+        display:none;
     }
 
     .full-footer {
@@ -162,6 +183,9 @@ body {
         display: none; 
     }
     .full-screen-para {
+        display: none; 
+    }
+    .full-screen-design {
         display: none; 
     }
 }
@@ -198,8 +222,8 @@ body {
     }
     .full-screen-image{
         display: initial; 
-        margin-top: 8rem;
-        margin-left: 1rem;  
+        margin-top: 0rem;
+        margin-left: 3.3rem;  
     }
 
     .body-flex {
@@ -211,12 +235,35 @@ body {
 
     .full-screen-para{
         display: initial; 
-        margin-top: 8rem; 
+        margin-top: 0rem; 
         margin-left: 2rem; 
         width: 30rem; 
+        padding: 1rem; 
     }
 
     .google-fullscreen-login-btn {
         display: none; 
+    }
+    .nav-main-header {
+        display:initial;
+        display: flex; 
+        margin-top: 6rem; 
+        font-size: 5rem; 
+        text-align: center; 
+    }
+
+    .full-screen-section {
+        display: flex; 
+    }
+
+    .full-screen-design {
+        display: initial; 
+        text-align: center; 
+        border: 1px solid black; 
+        border-radius: .3rem; 
+        margin-top: 2rem; 
+        background-color: rgba(0, 0, 0, 0.064); 
+        background-image: url(https://image.freepik.com/free-photo/blue-sky-with-clouds_1232-936.jpg);
+        background-size: cover; 
     }
 }
