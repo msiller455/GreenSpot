@@ -204,6 +204,9 @@ body {
 
     .body-flex {
         display: flex; 
+        padding: 1rem; 
+        width: 100%; 
+        border-bottom: 1px solid #000; 
     }
 
     .full-screen-para{
