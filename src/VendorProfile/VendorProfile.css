@@ -1,6 +1,6 @@
 .vendor-show-name {
     text-align: center; 
-    margin-top: 2rem; 
+    margin-top: 3rem; 
 }
 .vendor-show-review {
     text-align: center;
@@ -15,9 +15,13 @@
     text-align: center;
 }
 
+.cara-img {
+    width: 100%; 
+}
+
 .edit-show-btn {
     margin-top: 2.5rem; 
-    margin-left:7.8rem; 
+    margin-left:8.4rem; 
     width: 8rem;
     height: 3rem;  
     border: 0rem solid #000; 
