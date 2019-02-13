@@ -22,7 +22,6 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import io from 'socket.io-client'
 import Maps from './Maps/Maps'
 import EditPage from './EditPage/EditPage'
-import { withRouter } from 'react-router-dom'
 
 const socket = io('http://localhost:3030')
 
