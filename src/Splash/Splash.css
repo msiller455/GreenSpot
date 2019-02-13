@@ -62,6 +62,9 @@ body {
 .splash-statement {
     display: none; 
 }
+.splash-full-btn {
+    display: none;
+}
 
 @keyframes slider {
     0% {
@@ -104,16 +107,13 @@ body {
     .nav-main-header {
         display:none;
     }
-
     .full-footer {
         display:none; 
-    }
-    
+    }   
     .splash-img {
         width: 100%; 
         margin-top: 1rem; 
     }
-
     .full-screen-image {
         display: none; 
     }
@@ -129,6 +129,9 @@ body {
     .splash-statement {
         display: none; 
     }
+    .splash-full-btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -140,11 +143,9 @@ body {
     .nav-main-header {
         display:none;
     }
-
     .full-footer {
         display:none; 
     }
-
     .splash-header {
         font-size: 6rem; 
         display: flex; 
@@ -164,6 +165,9 @@ body {
     .splash-statement {
         display: none; 
     }
+    .splash-full-btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -175,7 +179,6 @@ body {
     .nav-main-header {
         display:none;
     }
-
     .full-footer {
         display:none; 
     }
@@ -183,7 +186,6 @@ body {
     .full-nav {
         display: none; 
     }
-
     .splash-header {
         font-size: 7.5rem; 
         display: flex; 
@@ -199,6 +201,9 @@ body {
     }
     .splash-statement {
         display: none; 
+    }
+    .splash-full-btn {
+        display: none;
     }
 }
 
@@ -235,25 +240,24 @@ body {
     .full-screen-image{
         display: initial; 
         margin-top: 0rem;
-        margin-left: 3.3rem;  
+        margin-left: 4rem;  
     }
-
     .body-flex {
         display: flex; 
         padding: 1rem; 
-        margin-left: 5rem; 
+        margin-left: 0rem; 
         width: 100%; 
-        border-bottom: 1px solid #000; 
+        border-top: 0px solid #000; 
+        background-color: #50AD55; 
+        border-bottom: 0px solid #000; 
     }
-
     .full-screen-para{
         display: initial; 
         margin-top: 0rem; 
-        margin-left: 2rem; 
+        margin-left: 5rem; 
         width: 30rem; 
         padding: 1rem; 
     }
-
     .google-fullscreen-login-btn {
         display: none; 
     }
@@ -264,7 +268,6 @@ body {
         font-size: 5rem; 
         text-align: center; 
     }
-
     .full-screen-section {
         display: flex; 
     }
@@ -272,14 +275,30 @@ body {
     .full-screen-design {
         display: initial; 
         text-align: center; 
-        border: 1px solid black; 
+        border-top: 0px solid black; 
+        border-top: 0px solid black;
+        width: 100%; 
         border-radius: .3rem; 
         margin-top: 4rem; 
-        background-color: rgba(0, 0, 0, 0.057); 
+        background-color: #50AD55; 
         background-size: cover; 
     }
-
     .splash-statement {
         display: initial; 
+    }
+    .splash-full-btn {
+        display: initial; 
+        border: 0rem solid #000; 
+        border-radius: .3rem;  
+        font-size: 1.2rem; 
+        padding: 1.3rem; 
+        margin: 3rem 0rem; 
+        background-color: #D0262A; 
+        color: #fff; 
+        font-family: 'Staatliches', cursive;
+        outline: none; 
+    }
+    .margin-body {
+        margin-left: 11rem; 
     }
 }
