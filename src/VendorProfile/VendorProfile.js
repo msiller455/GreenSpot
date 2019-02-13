@@ -45,9 +45,9 @@ class VendorProfile extends Component {
         this.props.history.push(`/users/${this.props.match.params.id}/edit`);
     }
 
-    vendorUpdate = async (e) => {
-        e.preventDefault()
-        axios.put('/users/${this.props.match.params.id}', this.state)
+ vendorUpdate = async (e) => {
+     e.preventDefault()
+     axios.put(`/users/${this.props.match.params.id}`, this.state)
     }
 
 

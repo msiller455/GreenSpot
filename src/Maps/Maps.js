@@ -8,6 +8,7 @@ import './Maps.css'
 
 export class MapContainer extends Component {
   componentDidMount () {
+    console.log('moiunt')
     this.loadMap()
   }
 
@@ -19,7 +20,7 @@ export class MapContainer extends Component {
   initMap = () => {
   var uluru = {lat: 34.121105, lng: -118.204905};
   const map = new window.google.maps.Map(document.getElementById('map'), {
-    center: {lat: 34.121105, lng: -118.204905},
+    center: {lat: this.props.location.geoAddressLat || 34.121105, lng: this.props.location.geoAddressLng || -118.204905},
     zoom: 18
   });
   var marker = new window.google.maps.Marker({
@@ -57,9 +58,10 @@ content: contentString
     }
 }
     render () {
+      window.initMap && window.initMap()
       return (    
         <div>
-        <div id="map"></div>
+          <div id="map"></div>
         </div>
       )
   }  
