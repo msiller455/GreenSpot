@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
-import Carousel from 'nuka-carousel'
 import Footer from '../Footer/Footer'
 import NavBar from '../NavBar/NavBar'
 import OAuth from '../OAuth/OAuth'
@@ -11,8 +10,8 @@ const Splash = (props) =>
         <div className="fullsize-header">
             <h1 className="splash-header"><div className="green">Green</div> Spot</h1>
             <div className="fullsize-header-flex">
+                {/* <Link className="vender-header-login-link" to='/login'>Log in</Link> */}
                 <button className="splash-header-btn">Who's Out Tonight?</button>
-                <Link className="vender-header-login-link" to='/login'>Log in</Link>
             </div>
         </div>
         <div id="slider">
@@ -25,14 +24,12 @@ const Splash = (props) =>
             </figure>
         </div>
         <div className="full-nav">
-            <NavBar/>
+            <NavBar startAuth={props.startAuth}/>
         </div>
-        <div className="full-screen-cara">
-            <Carousel>
-                    <img className="cara-img" src="http://7gigzxopz0uiqxo1-zippykid.netdna-ssl.com/wp-content/uploads/2018/05/vegan-hooligans.jpg" />
-                    <img className="cara-img" src="https://images.happycow.net/venues/1024/11/54/hcmp115492_375128.jpeg" />
-                    <img className="cara-img" src="https://static.wixstatic.com/media/afa30d_a284a182491549e0af7dd6b678cd6066~mv2_d_2400_1602_s_2.jpg" />
-            </Carousel>
+        <div className="body-flex">
+            <img className="full-screen-image" src="https://s3-media2.fl.yelpcdn.com/bphoto/VC08EJZwfzU-vlhXcuS_4g/o.jpg" height="240rem" />    
+            <h3 className="full-screen-para">Our food system has a huge impact on the environment, which is why changing the way you eat is one way you can live more sustainably. One fifth of energy consumption in the U.S. is gobbled up by food production.
+            As most TreeHuggers know, eating local and organic benefits the environment in myriad ways, but perhaps the greenest thing you can eat is your greens. That's because animal products are particularly energy-intensive and contribute heavily to greenhouse gasses. One study found the production of meat and diary contribute far more to greenhouse gasses in the U.S.</h3>
         </div>
         <Button/><br></br>
         {!props.loggedIn ?
