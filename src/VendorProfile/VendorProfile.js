@@ -44,15 +44,6 @@ class VendorProfile extends Component {
  vendorUpdate = async (e) => {
      e.preventDefault()
      axios.put('/users/${this.props.match.params.id}', this.state)
-    //  try {
-    //     const response = await axios(`/users/${this.props.match.params.id}`, {
-    //         method: 'PUT',
-    //         credentials: 'include',
-    //         body: JSON.stringify(this.state.)
-    //     })
-    //  } catch (err) {
-    //      console.log(err)
-    //  }
     }
 
 

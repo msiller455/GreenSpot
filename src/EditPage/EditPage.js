@@ -36,7 +36,6 @@ class EditPage extends Component {
             </div>
         )
     }
-
 }
 
 
