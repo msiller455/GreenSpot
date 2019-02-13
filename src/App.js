@@ -18,7 +18,7 @@ import './VendorList/VendorList.css'
 import VendorProfile from './VendorProfile/VendorProfile'
 import './VendorProfile/VendorProfile.css'
 import ShowPage from './ShowPage/ShowPage'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import io from 'socket.io-client'
 import Maps from './Maps/Maps'
 import EditPage from './EditPage/EditPage'
@@ -53,6 +53,7 @@ class App extends Component  {
       socket.on('google', user => {
           this.popup.close()
           this.setState({user, loggedIn: true})
+          this.props.history.push(`/vendor/${user.id}`)
       })
   }
 
@@ -107,7 +108,7 @@ class App extends Component  {
           <Route exact path='/login' component={ Login }/>
           <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
-          <Route exact path='/vendor' component={ VendorProfile }/>
+          <Route exact path='/vendor/:id' component={ VendorProfile }/>
           <Route exact path='/vendorlist' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route component={ my404 }/>

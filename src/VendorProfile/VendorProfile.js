@@ -3,6 +3,7 @@ import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 import Carousel from 'nuka-carousel';
 import axios from 'axios';
+import {withRouter} from 'react-router-dom'
 
 
 
@@ -10,6 +11,16 @@ class VendorProfile extends Component {
     state = {
         fileSelected: null
     }
+
+    componentDidMount() {
+        axios(`/users/${this.props.match.params.id}`)
+            .then(res => {
+                this.setState({
+                    vendor: res.data.data
+                })
+            }) 
+    }
+
 
     fileSelected = (e) => {
         this.setState({
@@ -56,4 +67,4 @@ class VendorProfile extends Component {
     }
 }
 
-export default VendorProfile  
+export default withRouter(VendorProfile)  
