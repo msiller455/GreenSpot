@@ -12,6 +12,7 @@ import './Login/Login.css'
 import './NavBar/NavBar.css'
 import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
+import './OAuth/OAuth.css'
 import VendorList from './VendorList/VendorList'
 import './VendorList/VendorList.css'
 import VendorProfile from './VendorProfile/VendorProfile'
@@ -20,6 +21,8 @@ import ShowPage from './ShowPage/ShowPage'
 import { Route, Switch } from 'react-router-dom'
 import io from 'socket.io-client'
 import Maps from './Maps/Maps'
+import EditPage from './EditPage/EditPage'
+import { withRouter } from 'react-router-dom'
 
 const socket = io('http://localhost:3030')
 
@@ -30,13 +33,22 @@ const my404 = () => {
     </div>
   )
 }
+
 class App extends Component  {
     state = {
       user: {},
       disabled: '',
-      loggedIn: false
+      loggedIn: false,
+      vendors: [],
+      vendorsToEdit: {
+        vendorName: '',
+        location: '',
+        image: '',
+        website: '',
+        bio: '',
+        _id: null
+      }
   }
-
   componentDidMount() {
       socket.on('google', user => {
           this.popup.close()
@@ -71,6 +83,7 @@ class App extends Component  {
             e.preventDefault()
             this.popup = this.openPopup() 
             this.checkPopup()
+            this.props.history.push("/vendor")
         }
     }
 
@@ -104,4 +117,4 @@ class App extends Component  {
   }
 }
 
-export default App;
+export default withRouter(App);
