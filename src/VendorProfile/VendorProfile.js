@@ -18,7 +18,7 @@ class VendorProfile extends Component {
                 this.setState({
                     vendor: res.data.data
                 })
-            }) 
+            })
     }
 
 
@@ -37,6 +37,14 @@ class VendorProfile extends Component {
             })
 
     }
+    routeChange = () => {
+     this.props.history.push(`/vendor/${this.props.match.params.id}/edit`);
+    }
+
+ vendorUpdate = async (e) => {
+     //edit
+    }
+
 
 
     render () {
@@ -44,9 +52,10 @@ class VendorProfile extends Component {
             <div className="show-container">
                 <NavBar/><br></br>
                 <h1 className="vendor-show-name">The Vegan Hooligans</h1>
+                <button onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
                 <div className="vendor-img-bio-flex">
                     <img className="vendor-show-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KlOpbuI65oPgH5O7IisnrPTQ4XqZnFZ8sfHLwEZldPg0Y5ha" height="120rem"></img>
-                    <h3 className="vendor-bio">We make vegan food fun. , we love giving ya'll them spicy pickles you love! 
+                    <h3 className="vendor-bio">We make vegan food fun. , we love giving ya'll them spicy pickles you love!
                         make sure to try our new Mac Melt sandwhich.
                     </h3>
                 </div>
@@ -67,4 +76,4 @@ class VendorProfile extends Component {
     }
 }
 
-export default withRouter(VendorProfile)  
+export default withRouter(VendorProfile)

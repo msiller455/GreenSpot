@@ -22,7 +22,6 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import io from 'socket.io-client'
 import Maps from './Maps/Maps'
 import EditPage from './EditPage/EditPage'
-import { withRouter } from 'react-router-dom'
 
 const socket = io('http://localhost:3030')
 
@@ -59,7 +58,7 @@ class App extends Component  {
 
   checkPopup = () => {
       const check = setInterval(() => {
-          const { popup } = this 
+          const { popup } = this
               if(!popup || popup.closed || popup.closed === undefined) {
                   clearInterval(check)
                   this.setState({disabled: ''})
@@ -72,7 +71,7 @@ class App extends Component  {
       const left = (window.innerWidth / 2) - (width / 2)
       const top = (window.innerHeight / 2) - (height / 2)
       const url = `http://localhost:9000/google?socketId=${socket.id}`
-  
+
       return window.open(url,null,
         `toolbar=no, location=no, directories=no, status=no, menubar=no,
         scrollbars=no, resizable=no, copyhistory=no, width=${width},
@@ -82,7 +81,7 @@ class App extends Component  {
     startAuth = (e) => {
         if(!this.state.disabled) {
             e.preventDefault()
-            this.popup = this.openPopup() 
+            this.popup = this.openPopup()
             this.checkPopup()
             this.props.history.push("/vendor")
         }
@@ -97,8 +96,8 @@ class App extends Component  {
       <div>
         {/* {this.state.loggedIn ? <div>logged in</div> : <div>sign in</div>} */}
         <Switch>
-          <Route exact path='/' component={ () => <Splash 
-            socket={socket} 
+          <Route exact path='/' component={ () => <Splash
+            socket={socket}
             checkPopup={this.checkPopup}
             openPopup={this.openPopup}
             startAuth={this.startAuth}
@@ -109,6 +108,7 @@ class App extends Component  {
           <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
           <Route exact path='/vendor/:id' component={ VendorProfile }/>
+          <Route exact path='/vendor/:id/edit' component={ EditPage }/>
           <Route exact path='/vendorlist' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route component={ my404 }/>
