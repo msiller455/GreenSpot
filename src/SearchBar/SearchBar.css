@@ -71,19 +71,24 @@
 @media screen and (min-width: 768px) {
 
     .search-container {
-       margin-top: 5.5rem; 
-       width: 94%; 
+       margin-top: 1.7rem; 
+       width: 116%; 
+    }
+
+    .search-btn {
+        width: 5rem; 
+        font-size: 1.3rem; 
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .search-container {
-        margin-top: 7rem; 
-        width: 94%; 
+    .search-container input{
+        margin-top: 6rem; 
+        width: 74%; 
      }
     .search-input {
-        font-size: 2rem; 
-        height: 3rem; 
+        font-size: 2.3rem; 
+        height: 1.8rem; 
     }
 }
 
