@@ -52,7 +52,9 @@ class App extends Component  {
       socket.on('google', user => {
           this.popup.close()
           this.setState({user, loggedIn: true})
-          this.props.history.push(`/vendor/${user.id}`)
+          user.created
+            ? this.props.history.push(`/vendor/${user.id}/edit`)
+            : this.props.history.push(`/vendor/${user.id}`)
       })
   }
 
@@ -83,7 +85,6 @@ class App extends Component  {
             e.preventDefault()
             this.popup = this.openPopup()
             this.checkPopup()
-            this.props.history.push("/vendor/:id")
         }
     }
 
@@ -108,7 +109,7 @@ class App extends Component  {
           <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
           <Route exact path='/vendor/:id' component={ VendorProfile }/>
-          <Route exact path='/vendor/:id/edit' component={ EditPage }/>
+          <Route exact path='/vendor/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
           <Route exact path='/vendorlist' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route component={ my404 }/>
