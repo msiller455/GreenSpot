@@ -49,7 +49,7 @@ const Splash = (props) =>
             <OAuth 
                 socket={props.socket} 
                 setUser={props.setUser} 
-                closeCard={props.closeCard}
+                closeCard={props.closeCard}onClick={props.closeCard}
                 checkPopup={props.checkPopup}
                 openPopup={props.openPopup}
                 startAuth={props.startAuth}

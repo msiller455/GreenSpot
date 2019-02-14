@@ -7,6 +7,10 @@
 body {
     font-family: 'Staatliches', cursive;
 }
+.logout-btn {
+    font-size: 1rem;
+    font-family: 'Staatliches', cursive;
+}
 
 .full-footer {
     display:none; 
