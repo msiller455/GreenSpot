@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
+import Maps from '../Maps/Maps'
 import axios from 'axios';
 import {withRouter} from 'react-router-dom'
 
@@ -13,7 +14,6 @@ class VendorProfile extends Component {
     }
 
     componentDidMount() {
-        console.log('vendor mounted')
         axios(`/users/${this.props.match.params.id}`)
             .then(res => {
                 this.setState({
@@ -63,9 +63,9 @@ class VendorProfile extends Component {
                 <h1 className="vendor-show-name">{this.state.vendor.vendorName}</h1>
                 <div className="vendor-img-bio-flex">
                     <h3 className="vendor-location">{this.state.vendor.location}</h3>
-                    
-                </div>                   
-                     <img className="cara-img" src={this.state.vendor.image}/>                   
+                </div>
+                    <Maps location={this.state.vendor.coordinates}/>                  
+                    <img className="cara-img" src={this.state.vendor.image}/>                   
                     <h2 className="vendor-show-review">{this.state.vendor.website}</h2>
                     <button className="edit-show-btn" onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
                 <Footer/>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 
 
@@ -31,8 +30,8 @@ class SearchBar extends Component {
         let geoAddressLat = geoAddressParsedJson.results[0].geometry.location.lat;
         let geoAddressLng = geoAddressParsedJson.results[0].geometry.location.lng;
         this.props.doUpdateLocation({
-          geoAddressLat: geoAddressLat,
-          geoAddressLng: geoAddressLng
+          lat: geoAddressLat,
+          lng: geoAddressLng
 
         })
       } catch (err) {
@@ -42,12 +41,11 @@ class SearchBar extends Component {
       console.log(this.state.geoAddressLng, 'THIS IS GEOADDRESS LNG')
     }
     
-    componentDidMount () {
-        this.getGeoaddress();  
-    } 
+    // componentDidMount () {
+    //     this.getGeoaddress();  
+    // } 
     render () {
         return (
-            
             <div className="search-container">
                 <input name="searchInput"className="search-input" onChange={this.handleChange} type="text" placeholder="Enter your address"></input>
                 <button className="search-btn" onClick={this.handleSearch}>Search </button> 

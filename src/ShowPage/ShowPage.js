@@ -8,7 +8,7 @@ import Maps, { MapContainer } from '../Maps/Maps'
 
 class ShowPage extends Component {
     state = {
-        location: {}
+        location: {lat: 34.121105, lng: -118.204905}
     }
 
     doUpdateLocation = (localObj) => 
@@ -16,7 +16,7 @@ class ShowPage extends Component {
 
     
     render () {
-        console.log('render this')
+        console.log('this is the show page')
         return (
             <div className="show-container">
                 <header><NavBar/></header>
