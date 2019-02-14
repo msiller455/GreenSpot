@@ -1,6 +1,6 @@
 .vendor-show-name {
     text-align: center; 
-    margin-top: 3rem; 
+    margin-top: 2rem; 
 }
 .vendor-show-review {
     text-align: center;
@@ -20,7 +20,6 @@
 }
 
 .edit-show-btn {
-    margin-top: 0rem; 
     margin-left:8rem; 
     width: 8rem;
     height: 3rem;  
