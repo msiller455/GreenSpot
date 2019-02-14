@@ -1,10 +1,16 @@
-.vendor-list-header {
+.vendor-list-header{
     text-align: center; 
     margin-top: 3rem; 
+    list-style-type: none;
+    text-decoration: none; 
 }
 
-.vendor-list-img {
+
+.vendor-list-image {
     width: 100%; 
+}
+ul {
+    padding: 0rem; 
 }
 
 .vendor-list-imgur {
@@ -52,7 +58,7 @@
         height: 18rem; 
         width: 100%; 
 
-    }
+    } 
     .vendor-list-imgur {
         display: none;
     }

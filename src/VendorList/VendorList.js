@@ -19,7 +19,7 @@ class VendorList extends Component {
                 this.setState({
                     users: res.data.data
                 })
-            })
+            }) 
     }
 
     
@@ -27,8 +27,8 @@ class VendorList extends Component {
         const whoIsOut = this.state.users.map((user) => {
             return (
                 <li key={user._id}>
-                    <Link to="/users/:id"><h1 className="vendor-list-header">{user.vendorName}</h1></Link>
-                    <img className="vendor-list-img" src={`${user.image}`} height="240rem"></img>
+                    <Link to={`/users/${user._id}`}><h1 className="vendor-list-header">{user.vendorName}</h1></Link>
+                    <img className="vendor-list-image" src={`${user.image}`} height="240rem"></img>
                 </li>
             )
         })

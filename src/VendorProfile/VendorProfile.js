@@ -62,13 +62,13 @@ class VendorProfile extends Component {
                 <NavBar/><br></br>
                 <h1 className="vendor-show-name">{this.state.vendor.vendorName}</h1>
                 <div className="vendor-img-bio-flex">
-                    <h3 className="vendor-location">{this.state.vendor.location}</h3>
+                    {/* <h3 className="vendor-location">{this.state.vendor.location}</h3> */}
                     
                 </div>
-                    <h2 className="vendor-show-review">{this.state.vendor.website}</h2>
-                    <button className="edit-show-btn" onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
+                    <button className="edit-show-btn" onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button><br></br><br></br>
                     <Maps location={this.state.vendor.coordinates}/>  
-                    <img className="cara-img" src={this.state.vendor.image}/>                   
+                    {/* <h2 className="vendor-show-review">{this.state.vendor.website}</h2> */}
+                    {/* <img className="cara-img" src={this.state.vendor.image}/>                    */}
                 
 
                 <Footer/>
