@@ -1,5 +1,6 @@
 #map {
-    height: 100vh;
+    height: 50vh;
+    width: 100vw;
   }
   /* Optional: Makes the sample page fill the window. */
   html, body {
@@ -8,9 +9,6 @@
     padding: 0;
   }
 
-  #map {
-    width: 100vw; 
-  }
 
   @media screen and (min-width: 1359px) {
     #map {
