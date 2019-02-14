@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './Maps.css'
+import axios from 'axios'
+import { withRouter } from 'react-router-dom'
+
 //const API_KEY = process.env.API_KEY;
 // const mapStyles = {
 //   width: '90%',
@@ -7,9 +10,25 @@ import './Maps.css'
 // };
 
 export class MapContainer extends Component {
+  state = {
+    vendor : {}
+  }
   componentDidMount () {
-    console.log('moiunt')
+   
+
+    console.log('vendor mounted POROPPPPOSPAODPASD')
+    axios(`/users/${this.props.match.params.id}`)
+        .then(res => {
+            this.setState({
+                vendor: res.data.data
+            })
+        })
+    console.log((this.state.vendor._id), 'THIS IS ID')
+    console.log((this.state.vendor.coordinates &&  this.state.vendor.coordinates.lat), 'THIS IS LAT')
+    console.log((this.state.vendor.coordinates &&  this.state.vendor.coordinates.lng), 'THIS IS LONG')
+
     this.loadMap()
+   
   }
 
   loadMap = () => {
@@ -75,4 +94,4 @@ content: contentString
     index.parentNode.insertBefore(script, index)
 
   }
-export default MapContainer;
+export default withRouter(MapContainer);
