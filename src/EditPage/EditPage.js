@@ -13,11 +13,13 @@ class EditPage extends Component {
                     : console.log(res.error)
             })
     }
+    
     handleInput = (e) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
         });
     }
+
     render() {
         console.log(this.props)
         return (

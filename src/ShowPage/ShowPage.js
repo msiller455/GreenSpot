@@ -24,7 +24,6 @@ class ShowPage extends Component {
                 <SearchBar doUpdateLocation={this.doUpdateLocation}/>
                 </div>
                 <Maps location={this.state.location}/>
-
                 <footer><Footer/></footer>
             </div>
         )
