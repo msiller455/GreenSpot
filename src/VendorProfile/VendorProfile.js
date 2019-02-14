@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
-import Carousel from 'nuka-carousel';
 import axios from 'axios';
 import {withRouter} from 'react-router-dom'
 
@@ -57,18 +56,12 @@ class VendorProfile extends Component {
             <div className="show-container">
                 <NavBar/><br></br>
                 <h1 className="vendor-show-name">{this.state.vendor.vendorName}</h1>
-                <button onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
                 <div className="vendor-img-bio-flex">
-                    <img className="vendor-show-logo" src="{this.state.image}" height="120rem"></img>
-                    <h3 className="vendor-bio">{this.state.vendor.location}</h3>
-                </div>
-                    <Carousel>
-                        <img className="cara-img" src="http://7gigzxopz0uiqxo1-zippykid.netdna-ssl.com/wp-content/uploads/2018/05/vegan-hooligans.jpg" />
-                        <img className="cara-img" src="https://images.happycow.net/venues/1024/11/54/hcmp115492_375128.jpeg" />
-                        <img className="cara-img" src="https://static.wixstatic.com/media/afa30d_a284a182491549e0af7dd6b678cd6066~mv2_d_2400_1602_s_2.jpg" />
-                    </Carousel>
+                    <h3 className="vendor-location">{this.state.vendor.location}</h3>
+                </div>                   
+                     <img className="cara-img" src={this.state.vendor.image}/>                   
                     <h2 className="vendor-show-review">{this.state.vendor.website}</h2>
-
+                    <button class="edit-show-btn" onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
                 <Footer/>
 
             </div>

@@ -1,21 +1,37 @@
 .vendor-show-name {
     text-align: center; 
-    margin-top: 4rem; 
+    margin-top: 3rem; 
 }
-
 .vendor-show-review {
     text-align: center;
 }
-
 .vendor-show-logo {
     margin-top: .7rem; 
     margin-left: 1rem; 
     padding: .5rem; 
 }
 
-.vendor-img-bio-flex {
-    display: flex; 
+.vendor-location {
+    text-align: center;
+}
 
+.cara-img {
+    width: 100%; 
+}
+
+.edit-show-btn {
+    margin-top: 2.5rem; 
+    margin-left:8rem; 
+    width: 8rem;
+    height: 3rem;  
+    border: 0rem solid #000; 
+    border-radius: .3rem;  
+    font-size: 1rem; 
+    padding: 1rem; 
+    background-color: #50AD55; 
+    color: #fff; 
+    font-family: 'Staatliches', cursive;
+    outline: none; 
 }
 
 .user-reviews {
