@@ -1,7 +1,21 @@
-.vendor-show-name {
+.vendor-show-name  {
     text-align: center; 
     margin-top: 2rem; 
+    color: #000; 
 }
+
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none; 
+    color: #000; 
+}
+
+a:visited {
+    color: #000; 
+}
+
 .vendor-show-review {
     text-align: center;
 }
