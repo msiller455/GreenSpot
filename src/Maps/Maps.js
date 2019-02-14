@@ -45,9 +45,14 @@ export class MapContainer extends Component {
  
   initMap = () => {
   // var uluru = {lat: 34.121105, lng: -118.204905};
-  new window.google.maps.Map(document.getElementById('map'), {
-    center: {lat: this.props.location && this.props.location.lat, lng: this.props.location && this.props.location.lng},
+  const map = new window.google.maps.Map(document.getElementById('map'), {
+    center: this.props.location,
     zoom: 18
+  });
+  new window.google.maps.Marker({
+    position: this.props.location,
+    map: map,
+    title: 'Hello World!'
   });
   // var marker = window.google && new window.google.maps.Marker({
   //   position: uluru,
