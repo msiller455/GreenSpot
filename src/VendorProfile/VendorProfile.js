@@ -9,17 +9,22 @@ import openSocket from 'socket.io-client'
 class VendorProfile extends Component {
     state = {
         vendor: {},
-        user:{}
+        user: {}
     }
     componentDidMount() {
+        // if (this.props.user){
+        //     localStorage.setItem("current", JSON.stringify(this.props.user))
+        //   }
+        //   var currentUser = JSON.parse(localStorage.getItem("current"))
     axios(`/users/${this.props.match.params.id}`)
         .then(res => {
             this.setState({
                 vendor: res.data.data,
-                user:this.props.user
+                user: this.props.user
             })
         })
     }
+
     routeChange = () => {
         this.props.history.push(`/users/${this.props.match.params.id}/edit`);
     }
@@ -35,7 +40,7 @@ class VendorProfile extends Component {
     }
     render () {
         console.log(this.state.vendor._id === this.props.match.params.id)
-        console.log(this.state.user)
+        console.log(this.state)
         const { _id } = this.state.vendor
         const { id } = this.state.user
         return (
@@ -45,7 +50,6 @@ class VendorProfile extends Component {
                 <div className="vendor-img-bio-flex">
                     <h3 className="vendor-location">{this.state.vendor.location}</h3>   
                 </div>
-                    <h2 className="vendor-show-review">{this.state.vendor.website}</h2>
                     {(id === _id)
                     ?
                     <div>
@@ -58,10 +62,6 @@ class VendorProfile extends Component {
                     )
                     } 
                     <Maps location={this.state.vendor.coordinates}/>
-
- 
-                    <img className="cara-img" src={this.state.vendor.image}/> 
-                  
                 <Footer/>
             </div>
         )
