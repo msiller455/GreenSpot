@@ -25,11 +25,16 @@ class EditPage extends Component {
             <div>
                 <h1 className="vendor-edit-header">Edit your profile</h1>
                 <form className="forms" onSubmit={(e) => this.vendorUpdate(e)}>
-                    Vendor Name: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="vendorName"/><br/>
-                    Tonight's address: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" pattern="\d+\s+.+" name="location"/><br/>
-                    Out tonight: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="checkbox" name="outTonight"/><br/>
-                    Website: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="website"/><br/>
-                    Post a food pic: <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="image"/><br/>
+                    <h3 className="editpagename-text">Vendor Name</h3>
+                    <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="vendorName"/><br/>
+                    <h3 className="editpage-text">Location</h3>
+                    <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" pattern="\d+\s+.+" name="location"/><br/>
+                    <h3 className="editpageout-text">Out Tonight?</h3>
+                    <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="checkbox" name="outTonight"/><br/>
+                    <h3 className="editpage-text">Website</h3>
+                    <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="website"/><br/>
+                    <h3 className="editpage-text">Food Pic</h3>
+                    <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="image"/><br/>
                     <br/>
                     <input className="vendor-edit-submit" type="Submit"/>
                 </form>
