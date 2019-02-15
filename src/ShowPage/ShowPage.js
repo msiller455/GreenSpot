@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import SearchBar from '../SearchBar/SearchBar';
-import Button from '../Button/Button'
-import Maps, { MapContainer } from '../Maps/Maps'
-
+import Maps from '../Maps/Maps'
 
 class ShowPage extends Component {
     state = {
@@ -14,7 +12,6 @@ class ShowPage extends Component {
     doUpdateLocation = (localObj) => 
         this.setState({location: localObj})
 
-    
     render () {
         console.log('this is the show page')
         return (
