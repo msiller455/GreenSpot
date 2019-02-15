@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GreenSpot
 
-## Available Scripts
+A web app that finds vegan pop-ups and vendors in a Los Angeles. A vendor can sign up using their Google account, create, edit and delete their profile page. When a vendor inputs an address, a marker will be placed on Google Maps. When a user clicks "Who's out tonight?" they are taken to a list of vendors who are that night with their location.
 
-In the project directory, you can run:
+![Image 3](https://i.imgur.com/1719lWb.png)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+GreenSpot was built in 5 days by:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Brent Ahrens - Designer, Front-End Developer / Mobile Responsiveness
 
-### `npm test`
+Michael Siller - Git Mananger, Back-end Manager, Heroku Master
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Abraham Hsu -  API Manager / Documentation / Front-End & Back-end
+```
+![Image 2](https://i.imgur.com/jw092to.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Technology Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* HTML
+* CSS
+* Javascript
+* Google Maps & Geocode API
+* ReactJS
+* Mongoose
+* MongoDB (NoSQL Database)
+* Express
+* Node
+* Passport
+* Google OAuth 2
+* Websockets.io
+* Heroku
 
-### `npm run eject`
+#  Getting Started
+LOGGING IN: Only meant for vendors. Need  Google account to sign up as vendor.
+When vendor signs up for the first time, vendor will be presented a vendor profile page, where they'll fill out Vendor Name, address(required), website, or images of their food (optional). 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+VENDOR PROFILE:
+Once vendor has completed their profile page, website will redirect to their Show page, showing their location for the night. Vendor can freely edit their address, and the Google Map location will update immediently and be available for visitors of the website to see.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+WEBSITE VISITORS:
+Upon visiting the landing page, visitors are greeted with images of delicious vegan food. Visitors can click on the button "Who's Out Tonight?" and be redirected to a list of Vendors who are out for the night. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Upon clicking a vendor, visitor will be redirected to the Vendor Show page, which displays additional information about the vendor: Vendor name, current address, food images, and a marker within Google Maps. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Challenges
+* Having 2 or more models makes it much more complicated; had to reduce down to 1 model with Passport
+* Went to Git Hell a couple times; many merge conflicts, but overcame it every time with a strict system 
+* Google Map and Geocode API Integration, placing all Vendor markers in a specified city
 
-## Learn More
+# Upcoming Features
+* Add ability for Users to review, comment, and post pictures for each Vendor
+* Ability for Vendors to UPLOAD images of their food and menu
+* Ability for vendors to set scheduling
+* Markers on Google maps should disappear if Vendor sets up for a set limited amount of time
+* Expands upon authoriziation: Add a normal login page. also add Login with Facebook, Github, Instagram.
+* Pull from Instagram API to display additional Vendor pictures
+* Make Edit Page so it shows current values.
+* Make it when user searches in the map, current vendors show up as markers
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Doing research at at York in Los Angeles! Consuming all the vegan food spots and asking vendor if they would be interested in our app.
+![Image 1](https://i.imgur.com/9kYOH7V.png)
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
