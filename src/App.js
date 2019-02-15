@@ -10,6 +10,8 @@ import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
 import './OAuth/OAuth.css'
 import './EditPage/EditPage.css'
+import About from './About/About'
+import './About/About.css'
 import Contact from './Contact /Contact'
 import './Contact /Contact.css'
 import VendorList from './VendorList/VendorList'
@@ -113,6 +115,7 @@ class App extends Component  {
           <Route exact path='/users' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route exact path='/contact' component={ Contact }/>
+          <Route exact path='/about' component={ About }/>
           <Route component={ my404 }/>
         </Switch>
       </div>
