@@ -10,7 +10,7 @@ class EditPage extends Component {
         axios.put(`/users/${this.props.user.id}`, this.state)
             .then(res => {
                 (res.status === 200)
-                    ? this.props.history.push(`/users/${this.props.user.id}`)
+                    ? this.props.history.push(`${process.env.REACT_APP_API_URL}/users/${this.props.user.id}`)
                     : console.log(res.error)
             })
     }
