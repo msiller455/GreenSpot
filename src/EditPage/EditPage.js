@@ -22,7 +22,6 @@ class EditPage extends Component {
     }
 
     render() {
-        console.log(this.state, 'THIS IS state!!!')
         return (
             <div>
                 <h1 className="vendor-edit-header">Edit your profile</h1>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Maps.css'
-import axios from 'axios'
-import { withRouter } from 'react-router-dom'
 
 export class MapContainer extends Component {
   state = {
@@ -15,9 +13,6 @@ export class MapContainer extends Component {
   componentDidMount () {
     this.initMap()
   }
-   
-
-  
   initMap = () => {
   const map = new window.google.maps.Map(document.getElementById('map'), {
     center: this.props.location,
@@ -37,6 +32,5 @@ export class MapContainer extends Component {
       )
   }  
 }  
-
 
 export default MapContainer;
