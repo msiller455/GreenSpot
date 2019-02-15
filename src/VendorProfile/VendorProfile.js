@@ -10,12 +10,12 @@ class VendorProfile extends Component {
         vendor: {}
     }
     componentDidMount() {
-    axios(`/users/${this.props.match.params.id}`)
-        .then(res => {
-            this.setState({
-                vendor: res.data.data
+        axios(`${process.env.REACT_APP_API_URL}/users/${this.props.match.params.id}`)
+            .then(res => {
+                this.setState({
+                    vendor: res.data.data
+                })
             })
-        })
     }
     routeChange = () => {
         this.props.history.push(`/users/${this.props.match.params.id}/edit`);

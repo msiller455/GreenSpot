@@ -13,7 +13,7 @@ class VendorList extends Component {
 
     componentDidMount() {
         console.log('these vendors are mounting')
-        axios('/users')
+        axios(`${process.env.REACT_APP_API_URL}/users`)
             .then(res => {
                 console.log(res)
                 this.setState({
