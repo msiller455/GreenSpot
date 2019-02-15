@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer'
 import Maps from '../Maps/Maps'
 import axios from 'axios';
 import {withRouter} from 'react-router-dom'
-import openSocket from 'socket.io-client'
 
 class VendorProfile extends Component {
     state = {

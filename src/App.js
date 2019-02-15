@@ -5,10 +5,6 @@ import Splash from './Splash/Splash'
 import './Maps/Maps.css';
 import './Splash/Splash.css'
 import './Button/Button.css'
-import SignUp from './SignUp/SignUp'
-import './SignUp/SignUp.css'
-import Login from './Login/Login'
-import './Login/Login.css'
 import './NavBar/NavBar.css'
 import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
@@ -109,8 +105,6 @@ class App extends Component  {
             closeCard={this.closeCard}
             loggedIn={this.state.loggedIn}
           /> }/>
-          <Route exact path='/login' component={ Login }/>
-          <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
           <Route exact path='/users/:id' component={ ()=>
             <VendorProfile

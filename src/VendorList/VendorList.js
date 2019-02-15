@@ -29,12 +29,12 @@ class VendorList extends Component {
                 <div>
                     <li key={user._id}>
                         <Link to={`/users/${user._id}`}><h1 className="vendor-list-header">{user.vendorName}</h1></Link>
-                        <img className="vendor-list-image" src={`${user.image}`} height="240rem"></img>
+                        <img className="vendor-list-image" src={`${user.image}`} height="240rem" alt="food"></img>
                     </li>
                     <div className="full-screen-vendorlist">
                         <li key={user._id}>
                         <Link to={`/users/${user._id}`}><h1 className="fullvendor-list-header">{user.vendorName}</h1></Link>
-                        <img className="fullvendor-list-image" src={`${user.image}`} height="240rem"></img>
+                        <img className="fullvendor-list-image" src={`${user.image}`} height="240rem" alt="food"></img>
                         </li>
                     </div>
                 </div>
