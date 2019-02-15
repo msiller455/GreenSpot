@@ -17,7 +17,6 @@ Abraham Hsu -  API Manager / Documentation / Front-End & Back-end
 
 # Technology Used
 
-
 * HTML
 * CSS
 * Javascript
@@ -45,13 +44,15 @@ Upon visiting the landing page, visitors are greeted with images of delicious ve
 Upon clicking a vendor, visitor will be redirected to the Vendor Show page, which displays additional information about the vendor: Vendor name, current address, food images, and a marker within Google Maps. 
 
 # Challenges
+* Having 2 or more models makes it much more complicated; had to reduce down to 1 model with Passport
 * Went to Git Hell a couple times; many merge conflicts, but overcame it every time with a strict system 
 * Google Map and Geocode API Integration, placing all Vendor markers in a specified city
+
 # Upcoming Features
 * Add ability for Users to review, comment, and post pictures for each Vendor
 * Ability for Vendors to UPLOAD images of their food and menu
 * Ability for vendors to set scheduling
-* Markers on Google maps should disappear if Vendor sets up for a set limit of time
+* Markers on Google maps should disappear if Vendor sets up for a set limited amount of time
 
 
 
