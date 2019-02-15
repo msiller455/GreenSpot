@@ -5,15 +5,13 @@ import Splash from './Splash/Splash'
 import './Maps/Maps.css';
 import './Splash/Splash.css'
 import './Button/Button.css'
-import SignUp from './SignUp/SignUp'
-import './SignUp/SignUp.css'
-import Login from './Login/Login'
-import './Login/Login.css'
 import './NavBar/NavBar.css'
 import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
 import './OAuth/OAuth.css'
 import './EditPage/EditPage.css'
+import About from './About/About'
+import './About/About.css'
 import Contact from './Contact /Contact'
 import './Contact /Contact.css'
 import VendorList from './VendorList/VendorList'
@@ -108,14 +106,16 @@ class App extends Component  {
             closeCard={this.closeCard}
             loggedIn={this.state.loggedIn}
           /> }/>
-          <Route exact path='/login' component={ Login }/>
-          <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
-          <Route exact path='/users/:id' component={ VendorProfile }/>
+          <Route exact path='/users/:id' component={ ()=>
+            <VendorProfile
+            user={this.state.user}
+            /> }/>
           <Route exact path='/users/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
           <Route exact path='/users' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
           <Route exact path='/contact' component={ Contact }/>
+          <Route exact path='/about' component={ About }/>
           <Route component={ my404 }/>
         </Switch>
       </div>

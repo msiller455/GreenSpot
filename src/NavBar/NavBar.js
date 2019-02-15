@@ -12,7 +12,7 @@ class NavBar extends Component {
             <ul className="nav-flex">
                 <li className="nav-links"><Link to='/main'>Map</Link></li>
                 <li className="nav-links"><Link to='/users'>Vendors</Link></li>
-                <li className="nav-links" onClick={(e) => this.props.startAuth(e)}><a>Log in</a></li>
+                <li className="nav-links" onClick={(e) => this.props.startAuth(e)}><a href="/">Log in</a></li>
             </ul>  
                 <input className="search-header-input" type="text" placeholder="Enter your address"></input> 
                 <button className="search-header-btn" onClick={this.handleSearch}>Search </button>      
