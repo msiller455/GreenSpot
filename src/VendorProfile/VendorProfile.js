@@ -14,7 +14,8 @@ class VendorProfile extends Component {
         axios(`${process.env.REACT_APP_API_URL}/users/${this.props.match.params.id}`)
             .then(res => {
                 this.setState({
-                    vendor: res.data.data
+                    vendor: res.data.data,
+                    user: this.props.user
                 })
             })
     }

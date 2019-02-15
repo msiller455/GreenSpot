@@ -29,7 +29,7 @@ class EditPage extends Component {
                     <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="vendorName"/><br/>
                     <h3 className="editpage-text">Location</h3>
                     <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" pattern="\d+\s+.+" name="location"/><br/>
-                    <h3 className="editpage-text">Out Tonight?</h3>
+                    <h3 className="editpageout-text">Out Tonight?</h3>
                     <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="checkbox" name="outTonight"/><br/>
                     <h3 className="editpage-text">Website</h3>
                     <input className="edit-page-input" onChange={(e) => this.handleInput(e)} type="text" name="website"/><br/>
