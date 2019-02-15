@@ -17,13 +17,11 @@ class EditPage extends Component {
     
     handleInput = (e) => {
         this.setState({
-           
             [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
         });
     }
 
     render() {
-        console.log(this.state, 'THIS IS state!!!')
         return (
             <div>
                 <h1 className="vendor-edit-header">Edit your profile</h1>

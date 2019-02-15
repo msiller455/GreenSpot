@@ -5,41 +5,18 @@ import Maps from '../Maps/Maps'
 import axios from 'axios';
 import {withRouter} from 'react-router-dom'
 
-
-
 class VendorProfile extends Component {
     state = {
-        fileSelected: null,
         vendor: {}
     }
-
     componentDidMount() {
-        axios(`/users/${this.props.match.params.id}`)
-            .then(res => {
-                this.setState({
-                    vendor: res.data.data
-                })
+    axios(`/users/${this.props.match.params.id}`)
+        .then(res => {
+            this.setState({
+                vendor: res.data.data
             })
-    }
-
-
-    fileSelected = (e) => {
-        this.setState({
-            fileSelected : e.target.files[0]
         })
-        console.log(e.target.files[0])
     }
-
-    fileUpload = () => {
-        const fd = new FormData();
-        fd.append('image', this.state.fileSelected, this.state.fileSelected.name)
-        axios.post('/users', fd)
-            .then(res => {
-                console.log(res);
-            })
-
-    }
-
     routeChange = () => {
         this.props.history.push(`/users/${this.props.match.params.id}/edit`);
     }
@@ -49,14 +26,12 @@ class VendorProfile extends Component {
      axios.put(`/users/${this.props.match.params.id}`, this.state)
     }
 
-
-
+    deleteVendor = () => {
+        axios.delete(`/users/${this.props.match.params.id}`, this.state)
+        this.props.history.push(`/`);
+    }
     render () {
         console.log((this.state.vendor._id), 'THIS IS ID')
-        console.log((this.state.vendor.coordinates &&  this.state.vendor.coordinates.lat), 'THIS IS LAT')
-        console.log((this.state.vendor.coordinates &&  this.state.vendor.coordinates.lng), 'THIS IS LONG')
-        console.log(this.state.vendor)
-
         return (
             <div className="show-container">
                 <NavBar/><br></br>
@@ -66,8 +41,12 @@ class VendorProfile extends Component {
                 </div>
                     <h2 className="vendor-show-review">{this.state.vendor.website}</h2>
                     <button className="edit-show-btn" onClick={this.routeChange} vendorUpdate={this.vendorUpdate} >Edit Profile</button>
-                    <Maps location={this.state.vendor.coordinates}/>  
-                    <img className="cara-img" src={this.state.vendor.image}/>                   
+
+                    <Maps location={this.state.vendor.coordinates}/> 
+                    <button className="delete-show-btn" onClick={this.deleteVendor} >Delete Profile</button>
+ 
+                    <img className="cara-img" src={this.state.vendor.image}/> 
+                  
                 <Footer/>
             </div>
         )
