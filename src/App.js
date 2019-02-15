@@ -24,7 +24,7 @@ import io from 'socket.io-client'
 import Maps from './Maps/Maps'
 import EditPage from './EditPage/EditPage'
 
-const socket = io('http://localhost:3030')
+const socket = io(process.env.REACT_APP_API_URL)
 
 const my404 = () => {
   return(
@@ -73,7 +73,7 @@ class App extends Component  {
       const width = 600, height = 600
       const left = (window.innerWidth / 2) - (width / 2)
       const top = (window.innerHeight / 2) - (height / 2)
-      const url = `http://localhost:9000/google?socketId=${socket.id}`
+      const url = `${process.env.REACT_APP_API_URL}/google?socketId=${socket.id}`
 
       return window.open(url,null,
         `toolbar=no, location=no, directories=no, status=no, menubar=no,
