@@ -14,6 +14,8 @@ import './Footer/Footer.css'
 import './SearchBar/SearchBar.css'
 import './OAuth/OAuth.css'
 import './EditPage/EditPage.css'
+import Contact from './Contact /Contact'
+import './Contact /Contact.css'
 import VendorList from './VendorList/VendorList'
 import './VendorList/VendorList.css'
 import VendorProfile from './VendorProfile/VendorProfile'
@@ -113,6 +115,7 @@ class App extends Component  {
           <Route exact path='/users/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
           <Route exact path='/users' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
+          <Route exact path='/contact' component={ Contact }/>
           <Route component={ my404 }/>
         </Switch>
       </div>

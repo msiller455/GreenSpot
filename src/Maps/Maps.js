@@ -13,7 +13,6 @@ export class MapContainer extends Component {
   componentDidMount () {
     this.initMap()
   }
-
   initMap = () => {
   const map = new window.google.maps.Map(document.getElementById('map'), {
     center: this.props.location,
@@ -26,7 +25,6 @@ export class MapContainer extends Component {
   });
 }
     render () {
-
       return (    
         <div>
           <div id="map"></div>

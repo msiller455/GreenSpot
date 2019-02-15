@@ -14,8 +14,9 @@ class NavBar extends Component {
                 <li className="nav-links"><Link to='/users'>Vendors</Link></li>
                 <li className="nav-links" onClick={(e) => this.props.startAuth(e)}><a>Log in</a></li>
             </ul>  
-                <input className="search-header-input" type="text" placeholder="Enter your address"></input>      
-        </div>
+                <input className="search-header-input" type="text" placeholder="Enter your address"></input> 
+                <button className="search-header-btn" onClick={this.handleSearch}>Search </button>      
+            </div>
         )
     }
 }
