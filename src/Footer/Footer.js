@@ -9,8 +9,8 @@ class Footer extends Component {
             <div className="footer-container">
             <ul className="footer-flex">
                     <li className="footer-links"><Link to='#'>About</Link></li>
-                    <li className="footer-links"><Link to='#'>Contact</Link></li>
-                    <li className="footer-links"><Link to='#'>Log out</Link></li>
+                    <li className="footer-links"><Link to='/contact'>Contact</Link></li>
+                    <li className="footer-links"><Link to='/'>Log out</Link></li>
             </ul>        
         </div>
         )

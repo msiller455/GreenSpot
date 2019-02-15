@@ -15,7 +15,7 @@ class OAuth extends Component {
                         onClick={(e) => this.props.startAuth(e)}
                         className={`google button`}
                     >
-                        Login with Goolge<FontAwesome name={'google'} />
+                        Login with Goolge <FontAwesome name={'google'} />
                     </button>
                 </div>
             </div>
