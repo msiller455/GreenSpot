@@ -112,7 +112,10 @@ class App extends Component  {
           <Route exact path='/login' component={ Login }/>
           <Route exact path='/signup' component={ SignUp }/>
           <Route exact path='/main' component={ ShowPage }/>
-          <Route exact path='/users/:id' component={ VendorProfile }/>
+          <Route exact path='/users/:id' component={ ()=>
+            <VendorProfile
+            user={this.state.user}
+            /> }/>
           <Route exact path='/users/:id/edit' component={() => <EditPage user={this.state.user}/> }/>
           <Route exact path='/users' component={ VendorList }/>
           <Route exact path='/maps' component={ Maps }/>
