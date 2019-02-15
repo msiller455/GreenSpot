@@ -11,17 +11,12 @@ class VendorProfile extends Component {
         user: {}
     }
     componentDidMount() {
-        // if (this.props.user){
-        //     localStorage.setItem("current", JSON.stringify(this.props.user))
-        //   }
-        //   var currentUser = JSON.parse(localStorage.getItem("current"))
-    axios(`/users/${this.props.match.params.id}`)
-        .then(res => {
-            this.setState({
-                vendor: res.data.data,
-                user: this.props.user
+        axios(`${process.env.REACT_APP_API_URL}/users/${this.props.match.params.id}`)
+            .then(res => {
+                this.setState({
+                    vendor: res.data.data
+                })
             })
-        })
     }
 
     routeChange = () => {
